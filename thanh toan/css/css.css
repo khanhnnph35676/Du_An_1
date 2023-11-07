@@ -1,0 +1,129 @@
+
+.form-container {
+    max-width: 400px;
+    display: flex;
+    padding: 20px;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bentrai{
+    width: 24%;
+   
+}
+.boxtrai{
+    padding: 10px;
+    background-color: #EEE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+}
+.boxgiua{
+    padding: 10px;
+    background-color: #EEE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+}
+.thanhtoan{
+    display: flex;
+}
+.ogiua{
+    width: 24%;
+}
+.tong{
+    display: flex;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.order-container {
+    
+    background-color: #EEE;
+    width: 24%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.order-summary {
+    margin-top: 20px;
+}
+
+.order-total {
+    font-weight: bold;
+    text-align: right;
+}
+
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color:#CCC;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.checkout-button:hover{
+    background-color: crimson;
+}
+.discount-input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;}
+    .COD{
+width: 2900%;
+padding-left: 10px;
+    }
