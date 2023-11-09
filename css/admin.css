@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header a{
+    color: black;
+}
+
+/* header */
+header{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.headline ul li a:hover{
+    color: rgb(33, 108, 123);
+    border-bottom:1px solid rgb(33, 108, 123);
+}
+
+/* main */
+
+main {
+    display: flex;
+}
+
+.box-left{
+    width:251px ;
+    height:1000vh;
+    background: rgb(255, 255, 255);
+    border-left: 1px solid rgb(190, 187, 187);
+    border-right: 1px solid rgb(190, 187, 187);
+    position: fixed;
+}
+
+.content-box-left{
+    width: 250px;
+    border-left: 1px solid rgb(190, 187, 187);
+    border-right: 1px solid rgb(190, 187, 187);
+    background: rgb(255, 255, 255);
+    padding:120px 10px 0px 10px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+}
+
+.content-box-left {
+    scrollbar-width: thin; /* Đặt kích thước mỏng cho thanh cuộn */
+    scrollbar-color: #888888 #ffffff; /* Đặt màu cho thanh cuộn */
+  }
+  
+  /* Cho trình duyệt Chrome */
+.content-box-left::-webkit-scrollbar {
+    width: 3px; /* Đặt độ rộng cho thanh cuộn */
+}
+  
+.content-box-left::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Đặt màu cho phần thân của thanh cuộn */
+}
+  
+.content-box-left::-webkit-scrollbar-track {
+    background-color: #ffffff; /* Đặt màu cho phần nền của thanh cuộn */
+}
+
+.radius{
+    border-radius: 5px;
+}
+
+.center{
+    flex: 1;
+    background: rgb(240, 237, 237);
+    padding: 120px 30px 50px 310px;
+}
+
+.box1{
+    display: flex;
+    gap:20px;
+}
+
+.turnover{
+    flex: 1;
+    background: white;
+    padding: 20px 20px 10px 20px;
+}
+
+.statistic-prd{
+    flex: .5;
+    background: white;
+    width: 500px;
+}
+
+.sattistic{
+    flex: 1;
+    background: white;
+   
+}
+
+.ct-sattistic{
+    display: grid;
+    gap: 10px;
+}
+
+.user-order{
+    display: flex !important;
+    margin:10px 10px 0px 10px;
+    gap: 10px;
+}
+
+.users, .orders{
+    background: wheat;
+    text-align: center;
+    flex: 1;
+    height: 170px;
+}
+
+.users span {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #00bfff;
+}
+
+.day-revenue{
+    background: rgb(179, 182, 245);
+    margin:0px 10px 10px 10px;
+}
+
+.headline{
+    display: flex;
+    justify-content: space-around;
+}
+
+.headline ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* sản phẩm của tháng */
+.box2{
+    margin-top: 30px;
+    width: 300px;
+    height: 500px;
+    background: white;
+}
