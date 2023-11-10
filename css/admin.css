@@ -122,11 +122,30 @@ main {
     text-align: center;
     flex: 1;
     height: 170px;
+    opacity: 0.7;
 }
 
-.users span {
-    width: 30px;
-    height: 30px;
+.users .icon-user {
+    padding: 10px;
+    padding-top: 16px;
+    border-radius: 50%;
+    border: 2px solid #00bfff;
+}
+
+.users span{
+    font-size: 40px;
+}
+
+.orders span{
+    font-size: 40px;
+}
+
+
+.orders .icon-order{
+    font-size: 17px;
+    padding: 10px;
+    padding-top: 17px;
+    border-radius: 50%;
     border: 2px solid #00bfff;
 }
 
@@ -147,8 +166,8 @@ main {
 
 /* sản phẩm của tháng */
 .box2{
-    margin-top: 30px;
-    width: 300px;
-    height: 500px;
     background: white;
+    height: 900px;
+    margin-top: 30px;
+    display: flex;
 }
