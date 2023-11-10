@@ -14,21 +14,25 @@
     <!-- header -->
     <header class="bg-primary">
        <h1 class="bg-primary">Admin</h1>
-       <!-- <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-       </ul> -->
-       <a href=""><i class="fa-solid fa-house"></i></a>
-       <i class="fa-solid fa-house"></i>
-       <i class="fa-solid fa-house"></i>
-       <i class="fa-solid fa-house"></i>
-       <i class="fa-solid fa-house"></i>
-       <i class="fa-solid fa-house"></i>
-       <i class="fa-solid fa-house"></i>
+      <form action="" method="GET">
+        <input type="text" placeholder="Tìm kiếm: ">
+        <button><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #005eff;"></i></button>
+      </form>
+       <div class="member">
+            <img class="icon-member" src="./img/banner/baner2.png" alt="">
+            <div class="circle"></div>
+            <ul>
+                <li>
+                    <a href="">Tên thành viên <i class="fa-solid fa-chevron-up fa-rotate-180 fa-xs" style="color: #403e3e;"></i></a>
+                    <ul>
+                        <li><a href="">Hồ sơ</a></li>
+                        <li><a href="">Cài đặt</a></li>
+                        <li><a href="">Đăng xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+       
     </header>
     <!-- main -->
     <main> 
@@ -39,8 +43,15 @@
                     <li><a href="">Sản phẩm</a></li>
                     <li><a href="">Danh mục</a></li>
                     <li><a href="">Khách hàng</a></li>
-                    <li><a href="">Thống kê</a></li>
                     <li><a href="">Thành viên</a></li>
+                    <li><a href="">Thống kê</a>
+                        <ul>
+                            <li><a href="">Bảng</a></li>
+                            <li><a href="">Biểu đồ</a></li>
+                            <li><a href="">Thành viên</a></li>
+                        </ul>
+                    </li>
+                    
                 </ul>
            </div>
        </div>
@@ -68,22 +79,93 @@
                     <div class="ct-sattistic">
                         <div class="user-order">
                             <div class="users radius">
-                                <span>Số người dùng</span><br><br>
-                                <span><i class="fa-regular fa-user fa-xl" style="color: #00bfff;"></i></span>
+                                <a href="">Số người dùng</a><br><br>
+                                <a href="" class="icon-user"><i class="fa-regular fa-user fa-xl" style="color: #00bfff;"></i></a><br>
+                                <br><span id="count-users">80</span>
                             </div>
                             <div class="orders radius">
-                                <span>Số loại sản phẩm</span>
+                                <a href="">Sản phẩm đã bán</a><br><br>
+                                <a href="" class="icon-orders"><i class="fa-solid fa-cart-shopping fa-lg" style="color: #00bfff;"></i></a><br>
+                                <br><span id="count-prd">80</span>
                             </div>
                         </div>
                         <div class="day-revenue radius">
                             <span>Doanh thu 1 ngày</span>
+                            <br>
+                            <span style="margin-left: 10px; font-size: 19px; font-weight: 600;">500,000VNĐ</span>
                             <br><br><br>
                         </div>
                     </div>
                   
                 </div>
             </div>
-            <div class="box2"></div>
+            <div class="box2">
+                <div class="prds-on-month radius">
+                    <h3>Sản phẩm của tháng</h3>
+                    <div class="table-prds-on-month radius">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Hình ảnh</th>
+                                <th scope="col">Giá cả</th>
+                                <th scope="col">Tình trạng</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="dmuc">
+                    <h3>Tổng danh mục</h3>
+                    <div class="table-dmuc radius">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Danh mục</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                              
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                              
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
        </div>
     </main>
     <footer>

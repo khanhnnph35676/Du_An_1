@@ -15,8 +15,10 @@ header{
     position: fixed;
     z-index: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    gap: 50px;
+    padding: 0px 50px 0px 20px;
 }
 
 ul li a{
@@ -27,6 +29,79 @@ ul li a{
 .headline ul li a:hover{
     color: rgb(33, 108, 123);
     border-bottom:1px solid rgb(33, 108, 123);
+}
+
+form{
+    position: relative;
+}
+
+form input[type="text"]{
+    border: none;
+    width: 300px;
+    padding: 5px;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+
+form input[type="text"]:focus{
+    width: 500px;
+}
+
+form button{
+    border: none;
+    background: inherit;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 7px;
+}
+
+.member{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.member .circle{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top:0;
+    /* margin-top: 7px; */
+    margin-left: 30px;
+    background: #6aff00;
+    border-radius: 50%;
+}
+
+.member .icon-member{
+    position: relative;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid rgb(215, 212, 212);
+}
+
+select{
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.member ul li a{
+    background: #888888;
+    margin-left: -20px;
+}
+
+.member ul li{
+    display:inline;
+}
+
+.member ul li ul{
+    display: none;
+}
+
+.member ul li ul li{
+    display: block;
 }
 
 /* main */
@@ -118,16 +193,29 @@ main {
 }
 
 .users, .orders{
-    background: wheat;
+    background: #f1eded;
     text-align: center;
     flex: 1;
     height: 170px;
 }
 
-.users span {
+.users .icon-user, .orders .icon-orders{
     width: 30px;
     height: 30px;
-    border: 2px solid #00bfff;
+    border-radius: 50%;
+    padding: 7px;
+    background: rgb(218, 218, 228);
+    font-size: 20px;
+}
+
+.users a, .orders a{
+    text-decoration: none;
+    color: black;
+}
+
+.users #count-users,.orders #count-prd{
+    overflow: hidden;
+    font-size: 40px;
 }
 
 .day-revenue{
@@ -147,8 +235,31 @@ main {
 
 /* sản phẩm của tháng */
 .box2{
+    display: flex;
     margin-top: 30px;
-    width: 300px;
-    height: 500px;
+    gap: 20px;
+}
+
+.prds-on-month{
+    flex: 1;
     background: white;
+}
+
+.dmuc{
+    flex: .7;
+    background: white;
+}
+
+.prds-on-month h3,.dmuc h3{
+    margin: 10px;
+}
+
+.table-dmuc,.table-prds-on-month{
+    border: 1px solid rgb(183, 178, 178);
+    padding: 10px;
+    margin: 10px;
+}
+
+.table-dmuc .table{
+    text-align: center;
 }
