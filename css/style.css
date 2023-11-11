@@ -604,3 +604,32 @@ footer{
     width: 2900%;
     padding-left: 10px;
 }
+.submit-button {
+    background-color: #106F85;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.card-body{
+    display: flex;
+    text-align: center;
+}
+.vertical-line{
+    width: 1px;
+    height: 60px;
+    background-color: black;
+    margin-left: 5px;
+}
+.card-title{
+    margin-top: 7px;
+}
+.card-text{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
