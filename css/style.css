@@ -633,3 +633,44 @@ footer{
     text-decoration: none;
     color: black;
 }
+/* Trang chi tiet tin tuc */
+.headline {
+    text-align: left;
+}
+.headline__news{
+    font-weight: bold;
+    color: #106F85;
+}
+.headline__time{
+    opacity: 0.5;
+    font-size: small;
+    margin: 10px;
+}
+.content__news{
+    text-align: center;
+    width: 700px;
+}
+.content__description{
+    font-weight: bold;
+}
+.form-news{
+    margin: 10px;
+    box-shadow: #CCC;
+}
+.form-head{
+    margin: 5px;
+    font-weight: bold;
+    color: #106F85;
+}
+.mb-3{
+    margin-top: 30px;
+}
+.btn-form{
+    padding: 10px;
+    background-color: #106F85;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
