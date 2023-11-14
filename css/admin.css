@@ -19,6 +19,18 @@ header{
     align-items: center;
 }
 
+.img-element-wrapper{
+    display: flex;
+}
+
+.controll-acount li ul{
+    display: none;
+}
+
+.img__element{
+    
+}
+
 ul li a{
     text-decoration: none;
     color: black;
@@ -166,8 +178,31 @@ main {
 
 /* sản phẩm của tháng */
 .box2{
-    background: white;
-    height: 900px;
     margin-top: 30px;
     display: flex;
+    gap: 30px;
+}
+
+.box-month-prd{
+    background: white;
+    flex: 1;
+}
+
+.box-month-prd h3,.all-statistic h3{
+    padding: 10px;
+}
+
+.all-statistic{
+    flex: .7;
+    background: white;
+}
+
+
+/* chức năng sản phẩm admin */
+.function-prds-box-month-prd{
+    padding-top: 100px;
+}
+
+.bgr-body{
+    background: #f0eded;
 }
