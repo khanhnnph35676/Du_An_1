@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/bieudo.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+    <!-- header -->
+    <header class="bg-primary">
+      <div class="header-left-wrapper">
+        <h1 class="bg-primary">Admin</h1>
+        <form action="">
+           <input type="text" placeholder="Tìm kiếm . . . ">
+           <button class="search__from"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #005eff;"></i></button>
+        </form>
+      </div>
+      <div class="element">
+          <div class="img-element-wrapper">
+              <img src="./img/loai_the/the Master card.png" alt="" class="img__element">
+              <span class="dot"></span>
+              <ul class="controll-acount">
+                <li><a href="">Tên tài khoản</a>
+                    <ul>
+                      <li><a href="">Hồ sơ</a></li>
+                      <li><a href="">Cài đặt</a></li>
+                      <li><a href="">Đăng xuất</a></li>
+                    </ul>
+                </li>
+              </ul>
+          </div>
+          
+      </div>
+    </header>
+    <!-- main -->
+    <main> 
+       <div class="box-left ">
+           <div class="content-box-left">
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Sản phẩm</a></li>
+                    <li><a href="">Danh mục</a></li>
+                    <li><a href="">Khách hàng</a></li>
+                    <li><a href="">Thống kê</a></li>
+                    <li><a href="">Thành viên</a></li>
+                </ul>
+           </div>
+       </div>
+       <div class="center">
+            <div class="box1">
+                  <!-- doanh thu -->
+                <div class="turnover radius">
+                    <div class="headline">
+                        <h5>Doanh thu thống kê</h5>
+                        <ul>
+                            <li><a href="">Ngày</a></li>
+                            <li><a href="">Tuần</a></li>
+                            <li><a href="">Tháng</a></li>
+                            <li><a href="">Năm</a></li>
+                        </ul>
+                    </div>
+                    <div id="chart-div" style="width: 450px; height: 280px;"></div>
+                </div>
+                <!-- Thống kê sản phẩm được mua -->
+                <div class="statistic-prd radius">
+                    <div id="donutchart" style="width: 350px; height: 300px;"></div>
+                </div>
+                <!-- số người dùng, tổng loại hàng, daonh thu 1 ngày -->
+                <div class="sattistic radius">
+                    <div class="ct-sattistic">
+                        <div class="user-order">
+                            <div class="users radius">
+                                <a href="">Số người dùng</a><br><br>
+                                <a href="" class="icon-user"><i class="fa-regular fa-user fa-2xl" style="color: #00bfff;"></i></a><br> <br>
+                                <span>90</span>
+                            </div>
+                            <div class="orders radius">
+                              <a href="">Tổng số sản phẩm</a><br><br>
+                              <a href="" class="icon-order"><i class="fa-brands fa-product-hunt fa-2xl" style="color: #005eff;"></i></a><br> <br>
+                              <span>290</span>
+                            </div>
+                        </div>
+                        <div class="day-revenue radius">
+                            <span>Doanh thu 1 ngày</span>
+                            <br><br><br>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="box2">
+                <div class="box-month-prd radius">
+                    <h3>Sản phẩm trong tháng</h3>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Tên sản phẩm</th>
+                            <th scope="col">Hình ảnh</th>
+                            <th scope="col">Giá</th>
+                            <th scope="col">Trạng thái</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="all-statistic radius">
+                    <h3>Tổng danh mục</h3>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Tên danh mục</th>
+                            <th scope="col">Số sản phẩm</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+       </div>
+    </main>
+    <footer>
+    
+    </footer>
+</body>
+<script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
