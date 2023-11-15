@@ -1,3 +1,7 @@
+<?php
+    $list_directories_main = list_directories_main();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,13 +46,12 @@
                 <li class="categories" >
                     <a href="">DANH MỤC SẢN PHẨM</a>
                     <ul>
-                        <a href=""><li>> đă</li></a>
-                        <a href=""><li>> đuawa</li></a>
-                        <a href=""><li>> đă</li></a>
-                        <a href=""><li>> đuawa</li></a>
-                        <a href=""><li>> đă</li></a>
-                        <a href=""><li>> đuawa</li></a>
+                        <?php foreach($list_directories_main as $diretory_main):
+                            extract($diretory_main); ?>
+                            <a href=""><li>> <?php echo $ten_dmc?></li></a>
+                        <?php endforeach; ?>
                     </ul>
+                    
                 </li>
                 <li><a href="index.php">TRANG CHỦ</a></li>
                 <li><a href="index.php?act=gioithieu">GIỚI THIỆU</a></li>

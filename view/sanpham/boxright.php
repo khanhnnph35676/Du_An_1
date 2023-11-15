@@ -2,11 +2,10 @@
     <div class="box1">
         <h5>DANH MỤC SẢN PHẨM</h5> 
         <ul>
-            <li><a href="../view/index.php">Trang chủ</a></li>
-            <li><a href="">Giới thiệu</a></li>
-            <li><a href="">Sản phẩm</a></li>
-            <li><a href="">Tin tức</a></li>
-            <li><a href="">Sản phẩm</a></li>
+            <?php foreach($list_directories_main as $diretory_main):
+                extract($diretory_main); ?>
+                <li><a href=""><?php echo $ten_dmc?></a></li>
+            <?php endforeach; ?>
         </ul>
     </div>
     <div class="box2">

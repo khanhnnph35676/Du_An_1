@@ -1,6 +1,7 @@
 <?php 
     include "../model/pdo.php";
     include "../model/sanpham.php";
+    include "../model/danhmuc.php";
     include "header.php";
     if(isset($_GET['act'])){
         $act = $_GET['act'] ;
@@ -14,6 +15,8 @@
                 include "tranggioithieu.php";
             break;
             case 'sanpham':
+                $list_prds = upload_prds_6();
+                $list_directories_main = list_directories_main();
                 include "sanpham/index.php";
                 break;
             case 'tintuc':
@@ -28,8 +31,8 @@
             case 'giohang':
                 include "tranggiohang.php";
                 break;
-            case '':
-
+            case 'sanpham':
+                    include "sanpham/index.php";
                 break;
             case '':
 
