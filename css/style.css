@@ -116,7 +116,7 @@ ul li :hover{
 
 .categories ul li{
     display: block !important;
-    height: 25px;
+    height: 29px;
     border-bottom: 1px solid rgb(121, 118, 118);
     border-radius: 1px;
     cursor: pointer;
@@ -143,7 +143,6 @@ ul li :hover{
 
 /* end baner */
 
-
 /* MAIN */
 main{
     margin:25px 0px 25px 0px;
@@ -155,6 +154,7 @@ main{
     display: flex;  
     gap: 10px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hot-prd a img{
@@ -204,6 +204,8 @@ ul li a{
 .products{
     display: flex;
     gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .product a{
@@ -227,13 +229,16 @@ ul li a{
 
 .product a img{
     width: 270px;
+    height: 220px;
 }
 
 .price{
     display: flex;
+    align-items: center;
     font-size: 25px;
     justify-content: space-between;
     margin: 10px 0px 10px 0px;
+    gap: 5px;
 }
 
 .assess{
@@ -253,26 +258,56 @@ ul li a{
     display: none;
 }
 
+.boxright{
+    padding-top: 145px;
+}
+
 /* Lượt sản phẩm 3 */
-.content-s-prd,.show-prd{
-    position: relative;
+.show-prd{
+    background: rgba(22, 21, 21, 1);
+    width: auto;
+}
+
+.content-s-prd{
+    background-image:url(../img/prd/nền\ sản\ phẩm\ g.png);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .bg{
     height: 400px;
 }
 
+.prd-wrapper{
+    display: none;
+}
+
 .s-product{
-    position: absolute;
-    border: 1px solid black;
     display: flex;
     gap: 20px;
-    bottom: 30px;
-    right: 6%;
     background: white;
-    padding: 20px;
+    padding:20px;
     width: 700px;
     border-radius: 5px;
+    margin:30px 10px 30px 10px;
+    z-index: 1;
+}
+
+.icon-dms{
+    display: grid;
+    gap: 30px;
+    margin-right: 200px;
+}
+
+.icon-dm{
+    display: flex;
+    gap: 30px;
+}
+
+.icon-dm a img{
+    width: 75px;
+    height: 75px;
 }
 
 .content-product{
@@ -284,6 +319,31 @@ ul li a{
     color: black;
 }
 
+.btn-show-prd{
+    height: 45px;
+    background: rgba(0, 0, 0, 0.726);
+    color:rgba(214, 205, 205, 0.684);
+    z-index: 2;
+    border: none;
+    border-radius: 5px;
+}
+
+.prev{
+    margin-right: -53px;
+}
+
+.next{
+    margin-left: -53px;
+}
+
+.btn-show-prd i{
+    padding: 0px 5px 0px 5px;
+}
+
+.btn-show-prd:hover{
+    background: black;
+    color: white !important;
+}
 /* bình luận của khách */
 .cmt-pr img{
     width: 100%;

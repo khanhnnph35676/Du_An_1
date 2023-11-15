@@ -1,6 +1,7 @@
 let str = document.querySelector('#str');
 let store = document.querySelector('.store');
 
+
 function click(button,content){
     button.addEventListener('click', function() {
         if (content.style.display === 'none') {
@@ -17,9 +18,9 @@ let heat = document.querySelector('.heat');
 
 let index = 0;
 let autoImg;
+let img = document.querySelectorAll(".slide");
 function autoSlide(){
     // Truy cập vào vị trí ảnh
-    let img = document.querySelectorAll(".slide");
      // điều kiện
     if(index >= img.length){
         index = 0;
@@ -36,7 +37,29 @@ function autoSlide(){
     // sau 2s nó tự gọi lại nó
     autoImg = setTimeout(autoSlide, 5000);
 }
-
 autoSlide();
+let prd = document.querySelectorAll('.prd-wrapper');
+function showPrd(){
+     // điều kiện
+    if(index >= prd.length){
+        index = 0;
+    }
+    if(index < 0){
+        index = prd.length - 1;
+    }
+    // chuyển tất cả ảnh về vị trí ẩn
+    for(let i = 0; i < prd.length; i++){
+        prd[i].style.display = "none";
+    }
+    prd[index].style.display = "block";
+    index++;
+    // sau 2s nó tự gọi lại nó
+}
+showPrd();
+function movePrd(n){
+    showPrd(index +=n);
+}
+  
+
 
      
