@@ -290,7 +290,7 @@ ul li a{
 }
 
 .cmt-pr {
-    background-image: url(/img/prd/nền\ khách\ bình\ g.png);
+    background-image: url(../img/prd/nền\ khách\ bình\ g.png);
     background-repeat: no-repeat;    
 }
 
@@ -635,7 +635,7 @@ footer{
 }
 /* Trang chi tiet tin tuc */
 .headline {
-    text-align: left;
+    text-align: center;
 }
 .headline__news{
     font-weight: bold;
@@ -674,3 +674,7 @@ footer{
     font-weight: bold;
     border-radius: 5px;
 }
+
+/*  trang sản phẩm */
+
+
