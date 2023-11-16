@@ -1,7 +1,5 @@
 let str = document.querySelector('#str');
 let store = document.querySelector('.store');
-
-
 function click(button,content){
     button.addEventListener('click', function() {
         if (content.style.display === 'none') {
@@ -11,10 +9,8 @@ function click(button,content){
         }
     });
 }
-
 let click_heat =document.querySelector('.click-heat');
 let heat = document.querySelector('.heat');
-
 
 let index = 0;
 let autoImg;
