@@ -6,80 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giỏ hàng của bạn</title>
     <!-- Thêm các liên kết đến các file CSS và Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            /* Màu nền của trang */
-        }
-
-        /* Tùy chỉnh cho bảng sản phẩm */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        table,
-        th,
-        td {
-            border: 1px solid #dee2e6;
-        }
-
-        th,
-        td {
-            padding: 15px;
-            text-align: center;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Định dạng ô số lượng */
-        input[type="number"] {
-            width: 50px;
-            text-align: center;
-            border: 1px solid #ced4da;
-            border-radius: 4px;
-        }
-
-        /* Tổng tiền và Button thanh toán */
-        .total-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Thêm padding và border cho phần tổng tiền và button */
-        .total-section>div {
-            padding: 10px;
-            border: 1px solid #dee2e6;
-            border-radius: 4px;
-        }
-
-        /* Thêm liên kết đến các file JavaScript và Bootstrap */
-        script,
-        .btn {
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 
 <body>
+    <div class="box-header">
+        <header class="container">
+            <div class="logo">
+                <a href="">
+                    <img src="./img/prd/logo.png" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="Tìm kiếm . . .">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </button>
 
-    <div class="container mt-5">
-        <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
-            </ol>
-        </nav>
+                </form>
+            </div>
+            <div class="store">
+                <a id="str" href="" class="text-black"><span></span>HỆ THỐNG CỬA HÀNG</a>
+            </div>
 
+            <div class="cart-account">
+                <a href="" id="acount"><span></span>TÀI KHOẢN</a>
+                <a href="">
+                    <i class="fa-solid fa-cart-shopping fa-xl" style="color:black;"></i>
+                </a>
+            </div>
+        </header>
+        <div class="bottom-header">
+            <ul class="container">
+                <li class="categories">
+                    <a href="">DANH MỤC SẢN PHẨM</a>
+                    <ul>
+                        <a href="">
+                            <li>> đă</li>
+                        </a>
+                        <a href="">
+                            <li>> đuawa</li>
+                        </a>
+                        <a href="">
+                            <li>> đă</li>
+                        </a>
+                        <a href="">
+                            <li>> đuawa</li>
+                        </a>
+                        <a href="">
+                            <li>> đă</li>
+                        </a>
+                        <a href="">
+                            <li>> đuawa</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <li><a href="">TRANG CHỦ</a></li>
+                <li><a href="">GIỚI THIỆU</a></li>
+                <li><a href="">SẢN PHẨM</a></li>
+                <li><a href="">TIN TỨC</a></li>
+                <li><a href="">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="tong container">
+        <div class="cart__content">
         <!-- Tiêu đề giỏ hàng của bạn -->
-        <h2 class="mb-4">Giỏ hàng của bạn</h2>
+        <h2 class="cart__header">Giỏ hàng của bạn</h2>
 
         <!-- Bảng sản phẩm -->
         <table class="table">
@@ -108,27 +106,57 @@
         </table>
 
         <!-- Button tiếp tục mua hàng -->
-        <div class="mt-3" style="display: flex;">
-            <button class="btn" style="background-color: #106F85; color: white ;">Tiếp tục mua hàng</button>
-            <div style="margin-left: 50%;">
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <div class=" mt-3 p-1 pl-1 pr-lg-5" style="border: 1px solid #106F85;">
-                        <h6>Tổng tiền phải thanh toán</h6>
+        <div class="cart__cost">
+            <button class="btn-form">Tiếp tục mua hàng</button>
+            <div class="cart__total">
+                    <div class="cart__total-money">
+                        <h6>Tổng tiền phải thanh toán: </h6>
                     </div>
-                    <div class="mt-3 p-1 pr-1 pl-lg-5" style="border: 1px solid #106F85;">
+                    <div class="cart__money">
                         <h6>$100.00</h6>
                     </div>
                 </div>
-            </div>
-
+        
         </div>
 
         <!-- Khung tổng tiền và Button thanh toán -->
-        <div class="mt-3 p-3 pl-5 pr-5" style="float: right;">
+        <div class="cart__pay">
 
-            <button class="btn mt-2" style="background-color: #106F85; color: white ;">Thanh toán</button>
+            <button class="btn-form">Thanh toán</button>
         </div>
     </div>
+</div>
+    <!-- footer -->
+    <footer class="container">
+        <div class="left-footer">
+            <h2>ND NỘI THẤT</h2>
+            <p>Với kinh nghiệm hơn 10 năm trong ngành nội thất, ND Nội Thất tự hào là cung cấp những mẫu sản phẩm nội
+                thất tốt nhất Việt Nam.</p>
+        </div>
+        <div class="content-footer">
+            <div class="about-us">
+                <h2>VỀ CHÚNG TÔI</h2>
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Sản phẩm</a></li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="abate">
+                <h4>THANH TOÁN</h4>
+                <a href=""><img src="./img/loai_the/the JCB.png" alt=""></a>
+                <a href=""><img src="./img/loai_the/the VISA.png" alt=""></a>
+                <a href=""><img src="./img/loai_the/the PayPal.png" alt=""></a>
+                <a href=""><img src="./img/loai_the/the bitcoin.png" alt=""></a>
+                <a href=""><img src="./img/loai_the/the Master card.png" alt=""></a>
+            </div>
+        </div>
+        <div class="policy">
+            <h2>CHÍNH SÁCH</h2>
+        </div>
+    </footer>
 
     <!-- Thêm liên kết đến các file JavaScript và Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
