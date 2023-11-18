@@ -34,8 +34,8 @@
             case 'sanpham':
                     include "sanpham/index.php";
                 break;
-            case '':
-
+            case 'chitietssp':
+                    include "sanpham/chitietsp.php";
                 break;
             default:
                 include "home.php";

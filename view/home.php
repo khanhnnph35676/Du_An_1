@@ -81,7 +81,7 @@
                 <button class="btn-show-prd prev" onclick="movePrd(-1)"><i class="fa-solid fa-chevron-up fa-rotate-270 fa-2xl"></i></button>
                 <div class="prd-wrapper">
                     <div class="s-product">
-                        <a href="">
+                        <a href="index.php?act=chitietssp">
                             <img src="../img/prd/prd1.png" alt="">
                         </a>
                         <div class="content-product">
@@ -110,7 +110,7 @@
                 </div>
                 <div class="prd-wrapper">
                     <div class="s-product">
-                        <a href="">
+                        <a href="index.php?act=chitietssp">
                             <img src="../img/prd/prd2.png" alt="">
                         </a>
                         <div class="content-product">
@@ -139,7 +139,7 @@
                 </div>
                 <div class="prd-wrapper">
                     <div class="s-product">
-                        <a href="">
+                        <a href="index.php?act=chitietssp">
                             <img src="../img/prd/prd3.png" alt="">
                         </a>
                         <div class="content-product">
