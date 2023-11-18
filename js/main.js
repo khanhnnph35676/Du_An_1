@@ -1,5 +1,5 @@
-let str = document.querySelector('#str');
-let store = document.querySelector('.store');
+// let str = document.querySelector('#str');
+// let store = document.querySelector('.store');
 
 
 function click(button,content){
@@ -12,9 +12,8 @@ function click(button,content){
     });
 }
 
-let click_heat =document.querySelector('.click-heat');
-let heat = document.querySelector('.heat');
-
+// let click_heat =document.querySelector('.click-heat');
+// let heat = document.querySelector('.heat');
 
 let index = 0;
 let autoImg;
@@ -52,10 +51,9 @@ function showPrd(){
         prd[i].style.display = "none";
     }
     prd[index].style.display = "block";
-    index++;
-    // sau 2s nó tự gọi lại nó
 }
 showPrd();
+
 function movePrd(n){
     showPrd(index +=n);
 }
