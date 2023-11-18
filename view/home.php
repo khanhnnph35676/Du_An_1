@@ -82,7 +82,7 @@
                 <div class="prd-wrapper">
                     <div class="s-product">
                         <a href="">
-                            <img src="./img/prd/prd1.png" alt="">
+                            <img src="../img/icon-dm/" alt="">
                         </a>
                         <div class="content-product">
                             <a href="">
@@ -111,7 +111,7 @@
                 <div class="prd-wrapper">
                     <div class="s-product">
                         <a href="">
-                            <img src="./img/prd/prd2.png" alt="">
+                            <img src="../img/prd/prd3.png" alt="">
                         </a>
                         <div class="content-product">
                             <a href="">
@@ -140,7 +140,7 @@
                 <div class="prd-wrapper">
                     <div class="s-product">
                         <a href="">
-                            <img src="./img/prd/prd3.png" alt="">
+                            <img src="../img/prd/prd4.png" alt="">
                         </a>
                         <div class="content-product">
                             <a href="">
@@ -148,7 +148,7 @@
                             </a>
                             <div class="price">
                                 <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                                <span><del> 3.000.000đ</del></span>
+                                <span><del> 000.000đ</del></span>
                             </div>
                             <p>Chất Liệu: Vải nhập khẩu (da – bố – nhung) Nệm mousse D40 cao cấp Khung sườn: 100% gỗ dầu đã qua xử lý...</p>
                             <div class="assess">
