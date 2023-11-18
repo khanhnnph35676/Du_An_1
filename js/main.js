@@ -1,7 +1,5 @@
 // let str = document.querySelector('#str');
 // let store = document.querySelector('.store');
-
-
 function click(button,content){
     button.addEventListener('click', function() {
         if (content.style.display === 'none') {
@@ -12,8 +10,9 @@ function click(button,content){
     });
 }
 
-// let click_heat =document.querySelector('.click-heat');
-// let heat = document.querySelector('.heat');
+let click_heat =document.querySelector('.click-heat');
+let heat = document.querySelector('.heat');
+
 
 let index = 0;
 let autoImg;
@@ -39,14 +38,12 @@ function autoSlide(){
 autoSlide();
 let prd = document.querySelectorAll('.prd-wrapper');
 function showPrd(){
-     // điều kiện
     if(index >= prd.length){
         index = 0;
     }
     if(index < 0){
         index = prd.length - 1;
     }
-    // chuyển tất cả ảnh về vị trí ẩn
     for(let i = 0; i < prd.length; i++){
         prd[i].style.display = "none";
     }
@@ -57,7 +54,5 @@ showPrd();
 function movePrd(n){
     showPrd(index +=n);
 }
-  
-
 
      
