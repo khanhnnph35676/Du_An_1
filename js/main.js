@@ -10,8 +10,8 @@ function click(button,content){
     });
 }
 
-let click_heat =document.querySelector('.click-heat');
-let heat = document.querySelector('.heat');
+// let click_heat =document.querySelector('.click-heat');
+// let heat = document.querySelector('.heat');
 
 
 let index = 0;
