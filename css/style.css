@@ -279,7 +279,7 @@ ul li a{
 }
 
 .prd-wrapper{
-    display: none;
+    display: none ;
 }
 
 .s-product{
@@ -737,3 +737,125 @@ footer{
 /*  trang sản phẩm */
 
 
+/* Trang gio hang */
+.cart__content{
+    margin: 10px;
+    padding: auto;
+    width: 900px;
+}
+.cart__header{
+    font-weight: bold;
+    color: #106F85;
+    margin-bottom: 20px;
+}
+.cart__cost{
+    margin: 10px;
+    padding: auto;
+    display: flex;
+    justify-content:space-between;
+}
+.cart__total{
+    display: flex;
+    border: 1px solid #106F85;
+    border-radius: 5px;
+    
+}
+.cart__total-money{
+    font-weight: bold;
+    margin: 5px;
+    align-items: center;
+}
+.cart__money{
+    color: #106F85;
+    margin: 5px;
+    align-items: center;
+}
+.cart__pay{
+   float: right;
+   clear: both;
+}
+/* Trang chi tiết sản phẩm */
+.product__details{
+    display: inline-flex;
+    height: 700px;
+  }
+  
+  .product__image {
+    display: block;
+    margin-right: 20px;
+    
+  }
+  
+  .main__image {
+    max-width: 600px;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .thumbnail__container {
+    margin-left: 243px;
+    padding: 10px;
+    display: flex;
+    transform: translateX(-50%);
+  }
+  
+  .thumbnail {
+    width: 150px;
+    height: 150px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .thumbnail:hover {
+    opacity: 1;
+  }
+.product__price{
+    display: flex;
+    margin: 5px;
+}
+.product__price--real{
+    margin-left: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.product__info{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.product__info h1{
+    font-size: 50px;
+  line-height: 50px;
+  margin: 25px 0;
+}
+.product__quantity{
+    width: 40px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #106F85;
+}
+.product__quantity input:focus{
+    outline: none;
+  }
+  .product__add-to-cart{
+    display: inline-block;
+  background: #106F85;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: 0.5em;;
+  }.product__add-to-cart:hover{
+    background: #437681;
+  }
+  .product__number{
+    display: inline;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+  }
