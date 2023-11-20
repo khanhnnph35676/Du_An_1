@@ -22,7 +22,7 @@
                 <ul>
                     <?php foreach($list_directories as $directory):
                         extract($directory);?>
-                    <li><a href=""><?php echo $ten_danhmuc ?></a></li>
+                        <li><a href=""><?php echo $ten_danhmuc ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
@@ -31,10 +31,10 @@
                 <?php  foreach($list_prds as $prd):
                         extract($prd);?>
                 <div class="product">
-                    <a href="">
+                    <a href="index.php?act=chitietsp&id_sp=<?php echo $id?>">
                     <img src="../img/prd/<?php echo $hinh_anh ?>" alt="">
                     </a>
-                    <a href="">
+                    <a href="index.php?act=chitietsp&id_sp=<?php echo $id?>">
                         <strong><span style="font-size: 20px;"><?php echo $ten_sp ?></span></strong>
                     </a>
                     <div class="price">

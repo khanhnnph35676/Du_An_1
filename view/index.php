@@ -2,6 +2,7 @@
     include "../model/pdo.php";
     include "../model/sanpham.php";
     include "../model/danhmuc.php";
+    include "../model/khachhang.php";
     include "header.php";
     if(isset($_GET['act'])){
         $act = $_GET['act'] ;
@@ -34,8 +35,28 @@
             case 'sanpham':
                     include "sanpham/index.php";
                 break;
-            case 'chitietssp':
+            case 'chitietsp':
+                    //nếu khách chọn thêm sản phẩm 
+                    //mà chưa đăng nhập sẽ sang trang đăng nhập
+                    $user = upload_user($email,$pass);
+                    if(isset($_GET['add_to_cart'])){
+                        if(empty($user['id'])){
+                            include '';
+                        }
+                    }
+                    
+                    //in thông tin sản phẩm
+                    if(isset($_GET['id_sp'])){
+                        $id = $_GET['id_sp'];
+                        $prd = upload_prd($id);
+                    }
                     include "sanpham/chitietsp.php";
+                break;
+            case 'buy-now':    
+                include "trangthanhtoan.php";
+                break;
+            case '':    
+                
                 break;
             default:
                 include "home.php";
