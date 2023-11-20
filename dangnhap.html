@@ -1,74 +1,452 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Webleb</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .desktop {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .desktop .div {
+            background-color: #ffffff;
+            overflow: hidden;
+            width: 1663px;
+            height: 1019px;
+            position: relative;
+        }
+        
+        .desktop .trang-ch {
+            position: absolute;
+            top: 29px;
+            left: 35px;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: transparent;
+            font-size: 32px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+        
+        .desktop .text-wrapper {
+            color: #000000;
+        }
+        
+        .desktop .span {
+            color: #106f85;
+        }
+        
+        .desktop .text-wrapper-2 {
+            position: absolute;
+            top: 29px;
+            left: 201px;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #106f85;
+            font-size: 32px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+        
+        .desktop .text-wrapper-3 {
+            position: absolute;
+            top: 139px;
+            left: 658px;
+            -webkit-text-stroke: 1px #000000;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 36px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+        
+        .desktop .p {
+            position: absolute;
+            top: 205px;
+            left: 449px;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 32px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+        
+        .desktop .group {
+            position: absolute;
+            width: 222px;
+            height: 61px;
+            top: 423px;
+            left: 391px;
+        }
+        
+        .desktop .overlap-group {
+            position: relative;
+            width: 219px;
+            height: 60px;
+            left: -1px;
+        }
+        
+        .desktop .text-wrapper-4 {
+            position: absolute;
+            width: 215px;
+            top: 11px;
+            left: 0;
+            -webkit-text-stroke: 1px #000000;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+        
+        .desktop .text-wrapper-5 {
+            left: 188px;
+            position: absolute;
+            width: 31px;
+            top: 0;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+        }
+        
+        .desktop .group-2 {
+            position: absolute;
+            width: 177px;
+            height: 53px;
+            top: 621px;
+            left: 391px;
+        }
+        
+        .desktop .text-wrapper-6 {
+            position: absolute;
+            width: 142px;
+            top: 3px;
+            left: -1px;
+            -webkit-text-stroke: 1px #000000;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+        
+        .desktop .text-wrapper-7 {
+            left: 142px;
+            position: absolute;
+            width: 31px;
+            top: 0;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-8 {
+            position: absolute;
+            top: 1041px;
+            left: 1201px;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 25px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+        }
+        
+        .desktop .div-wrapper {
+            position: absolute;
+            width: 211px;
+            height: 64px;
+            top: 1023px;
+            left: 362px;
+            background-color: #106f85;
+            border-radius: 10px;
+        }
+        
+        .desktop .text-wrapper-9 {
+            width: 155px;
+            top: 10px;
+            left: 28px;
+            position: absolute;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+        }
+        
+        .desktop .group-3 {
+            position: absolute;
+            width: 170px;
+            height: 64px;
+            top: 1023px;
+            left: 998px;
+            background-color: #106f85;
+            border-radius: 10px;
+        }
+        
+        .desktop .text-wrapper-10 {
+            width: 127px;
+            top: 12px;
+            left: 24px;
+            position: absolute;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+        }
+        
+        .desktop .group-4 {
+            position: absolute;
+            width: 1022px;
+            height: 79px;
+            top: 711px;
+            left: 390px;
+            background-color: #ffffff;
+            border: 1px solid;
+            border-color: #000000;
+            box-shadow: 0px 4px 4px #00000040;
+        }
+        
+        .desktop .text-wrapper-11 {
+            position: absolute;
+            top: 19px;
+            left: 15px;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #beadad;
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+        }
+        
+        .desktop .overlap-wrapper {
+            position: absolute;
+            width: 245px;
+            height: 65px;
+            top: 302px;
+            left: 959px;
+        }
+        
+        .desktop .overlap {
+            position: relative;
+            width: 247px;
+            height: 65px;
+        }
+        
+        .desktop .overlap-group-wrapper {
+            position: absolute;
+            width: 247px;
+            height: 65px;
+            top: 0;
+            left: 0;
+        }
+        
+        .desktop .overlap-group-2 {
+            position: relative;
+            width: 245px;
+            height: 65px;
+            background-color: #ffffff;
+            border: 1px solid;
+            border-color: #d9d9d9;
+        }
+        
+        .desktop .text-wrapper-12 {
+            position: absolute;
+            top: 17px;
+            left: 105px;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 25px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+        }
+        
+        .desktop .rectangle {
+            width: 58px;
+            left: 1px;
+            position: absolute;
+            height: 63px;
+            top: 1px;
+            object-fit: cover;
+        }
+        
+        .desktop .group-5 {
+            position: absolute;
+            width: 245px;
+            height: 65px;
+            top: 302px;
+            left: 629px;
+        }
+        
+        .desktop .text-wrapper-13 {
+            position: absolute;
+            top: 16px;
+            left: 98px;
+            -webkit-text-stroke: 1px #d9d9d9;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 25px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+        }
+        
+        .desktop .img {
+            width: 62px;
+            left: 2px;
+            position: absolute;
+            height: 63px;
+            top: 1px;
+            object-fit: cover;
+        }
+        
+        .desktop .group-6 {
+            position: absolute;
+            width: 1022px;
+            height: 79px;
+            top: 500px;
+            left: 390px;
+            background-color: #ffffff;
+            border: 1px solid;
+            border-color: #000000;
+            box-shadow: 0px 4px 4px #00000040;
+        }
+        
+        .desktop .text-wrapper-14 {
+            position: absolute;
+            top: 19px;
+            left: 13px;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #beadad;
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-15 {
+            position: absolute;
+            top: 893px;
+            left: 1312px;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 25px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+        }
+        
+        .desktop .group-7 {
+            position: absolute;
+            width: 211px;
+            height: 64px;
+            top: 875px;
+            left: 473px;
+            background-color: #106f85;
+            border-radius: 10px;
+        }
+        
+        .desktop .group-8 {
+            position: absolute;
+            width: 170px;
+            height: 64px;
+            top: 875px;
+            left: 1109px;
+            background-color: #106f85;
+            border-radius: 10px;
+        }
+    </style>
 </head>
+
 <body>
-<div id="stars"></div>
-<div id="stars2"></div>
-<div id="stars3"></div>
-<div class="section">
-  <div class="container">
-    <div class="row full-height justify-content-center">
-      <div class="col-12 text-center align-self-center py-5">
-        <div class="section pb-5 pt-5 pt-sm-2 text-center">
-          <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
-                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-                <label for="reg-log"></label>
-          <div class="card-3d-wrap mx-auto">
-            <div class="card-3d-wrapper">
-              <div class="card-front">
-                <div class="center-wrap">
-                  <div class="section text-center">
-                    <h4 class="mb-4 pb-3">Log In</h4>
-                    <div class="form-group">
-                      <input type="email" class="form-style" placeholder="Email">
-                      <i class="input-icon uil uil-at"></i>
-                    </div>	
-                    <div class="form-group mt-2">
-                      <input type="password" class="form-style" placeholder="Password">
-                      <i class="input-icon uil uil-lock-alt"></i>
-                    </div>
-                    <a href="https://www.web-leb.com/code" class="btn mt-4">Login</a>
-                    <p class="mb-0 mt-4 text-center"><a href="https://www.web-leb.com/code" class="link">Forgot your password?</a></p>
-                      </div>
-                    </div>
-                  </div>
-              <div class="card-back">
-                <div class="center-wrap">
-                  <div class="section text-center">
-                    <h4 class="mb-3 pb-3">Sign Up</h4>
-                    <div class="form-group">
-                      <input type="text" class="form-style" placeholder="Full Name">
-                      <i class="input-icon uil uil-user"></i>
-                    </div>	
-                    <div class="form-group mt-2">
-                      <input type="tel" class="form-style" placeholder="Phone Number">
-                      <i class="input-icon uil uil-phone"></i>
-                    </div>	
-                    <div class="form-group mt-2">
-                      <input type="email" class="form-style" placeholder="Email">
-                      <i class="input-icon uil uil-at"></i>
-                    </div>
-                    <div class="form-group mt-2">
-                      <input type="password" class="form-style" placeholder="Password">
-                      <i class="input-icon uil uil-lock-alt"></i>
-                    </div>
-                    <a href="https://www.web-leb.com/code" class="btn mt-4">Register</a>
-                      </div>
-                    </div>
-                  </div>
+    <div class="desktop">
+        <div class="div">
+            <p class="trang-ch"><span class="text-wrapper">Trang chủ/</span> <span class="span">&nbsp;</span></p>
+            <div class="text-wrapper-2">Đăng nhập tài khoản</div>
+            <div class="text-wrapper-3">ĐĂNG NHẬP TÀI KHOẢN</div>
+            <p class="p">Nếu bạn có một tài khoản xin hãy vui lòng đăng nhập</p>
+            <div class="group">
+                <div class="overlap-group">
+                    <div class="text-wrapper-4">Số điên thoại</div>
+                    <div class="text-wrapper-5">*</div>
                 </div>
-              </div>
             </div>
-          </div>
+            <div class="group-2">
+                <div class="text-wrapper-6">Mật khẩu</div>
+                <div class="text-wrapper-7">*</div>
+            </div>
+            <div class="text-wrapper-8">Quên mật khẩu?</div>
+            <div class="div-wrapper">
+                <div class="text-wrapper-9">Đăng nhập</div>
+            </div>
+            <div class="group-3">
+                <div class="text-wrapper-10">Đăng ký</div>
+            </div>
+            <div class="group-4">
+                <div class="text-wrapper-11">Nhập mật khẩu</div>
+            </div>
+            <div class="overlap-wrapper">
+                <div class="overlap">
+                    <div class="overlap-group-wrapper">
+                        <div class="overlap-group-2">
+                            <div class="text-wrapper-12">Google</div>
+                        </div>
+                    </div>
+                    <img class="rectangle" src="./img/anhsp/rectangle-270@2x.png" />
+                </div>
+            </div>
+            <div class="group-5">
+                <div class="overlap">
+                    <div class="overlap-group-wrapper">
+                        <div class="overlap-group-2">
+                            <div class="text-wrapper-13">Faceboook</div>
+                        </div>
+                    </div>
+                    <img class="img" src="./img/anhsp/rectangle-206@2x.png" />
+                </div>
+            </div>
+            <div class="group-6">
+                <div class="text-wrapper-14">Nhập số điện thoại</div>
+            </div>
+            <div class="text-wrapper-15">Quên mật khẩu?</div>
+            <div class="group-7">
+                <div class="text-wrapper-9">Đăng nhập</div>
+            </div>
+            <div class="group-8">
+                <div class="text-wrapper-10">Đăng ký</div>
+            </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>
