@@ -81,42 +81,8 @@
                 <button class="btn-show-prd prev" onclick="movePrd(-1)"><i class="fa-solid fa-chevron-up fa-rotate-270 fa-2xl"></i></button>
                 <div class="prd-wrapper">
                     <div class="s-product">
-<<<<<<< HEAD
-                        <a href="">
-                            <img src="../img/icon-dm/" alt="">
-=======
-                        <a href="index.php?act=chitietssp">
-                            <img src="../img/prd/prd1.png" alt="">
-                        </a>
-                        <div class="content-product">
-                            <a href="">
-                                <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                            </a>
-                            <div class="price">
-                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                                <span><del> 5.000.000đ</del></span>
-                            </div>
-                            <p>Chất Liệu: Vải nhập khẩu (da – bố – nhung) Nệm mousse D40 cao cấp Khung sườn: 100% gỗ dầu đã qua xử lý...</p>
-                            <div class="assess">
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                            </div>
-                            <div class="heart">
-                                <button>
-                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="prd-wrapper">
-                    <div class="s-product">
                         <a href="index.php?act=chitietssp">
                             <img src="../img/prd/prd2.png" alt="">
->>>>>>> develop
                         </a>
                         <div class="content-product">
                             <a href="">
@@ -144,7 +110,6 @@
                 </div>
                 <div class="prd-wrapper">
                     <div class="s-product">
-<<<<<<< HEAD
                         <a href="">
                             <img src="../img/prd/prd3.png" alt="">
                         </a>
@@ -174,12 +139,8 @@
                 </div>
                 <div class="prd-wrapper">
                     <div class="s-product">
-                        <a href="">
-                            <img src="../img/prd/prd4.png" alt="">
-=======
                         <a href="index.php?act=chitietssp">
-                            <img src="../img/prd/prd3.png" alt="">
->>>>>>> develop
+                            <img src="../img/prd/prd4.png" alt="">
                         </a>
                         <div class="content-product">
                             <a href="">

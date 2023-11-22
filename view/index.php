@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     include "../model/pdo.php";
     include "../model/sanpham.php";
     include "../model/danhmuc.php";
@@ -27,10 +28,26 @@
                 include "lienhe.php";
                 break;
             case 'taikhoan':
-                include "taikhoan/dangnhap.php";
+                // nếu khách đã có tài khoản sẽ k vào đc trang đăng nhập để tiếp tục đăng nhập
+                // mà trang sẽ đc update theo thông tin tài khoản của khách
+                if(empty($_SESSION['userName'])){
+                    include "taikhoan/dangnhap.php";
+                }else{
+                    $user_then_check = check_user($_SESSION['userName']);
+                    include "taikhoan/thongtintaikhoan.php";
+                }
                 break;
             case 'giohang':
-                include "tranggiohang.php";
+                    $user_then_check = check_user($_SESSION['userName']);
+                    if(isset($_SESSION['userName'])){
+                        $prds_on_cart = upload_prds_on_cart($user_then_check['ten_kh']);
+                        $sumMoney_upload_prds_on_cart = sumMoney_upload_prds_on_cart();
+                        include "giohang/tranggiohang.php";
+                    }else{
+                        include "giohang/giohangrong.php";
+                    }
+
+                   
                 break;
             case 'sanpham':
                     include "sanpham/index.php";
@@ -38,13 +55,12 @@
             case 'chitietsp':
                     //nếu khách chọn thêm sản phẩm 
                     //mà chưa đăng nhập sẽ sang trang đăng nhập
-                    $user = upload_user($email,$pass);
-                    if(isset($_GET['add_to_cart'])){
-                        if(empty($user['id'])){
-                            include '';
+                    if(isset($_POST['add_to_cart'])){
+                        if(empty($_SESSION['userName'])){
+                            header('location:index.php?act=taikhoan');
                         }
                     }
-                    
+                    $user_then_check = check_user($_SESSION['userName']);
                     //in thông tin sản phẩm
                     if(isset($_GET['id_sp'])){
                         $id = $_GET['id_sp'];
@@ -55,8 +71,10 @@
             case 'buy-now':    
                 include "trangthanhtoan.php";
                 break;
-            case '':    
-                
+            case 'giohang':    
+
+                include "tranggiohang.php";
+
                 break;
             default:
                 include "home.php";

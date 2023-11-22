@@ -741,7 +741,6 @@ footer{
 .cart__content{
     margin: 10px;
     padding: auto;
-    width: 900px;
 }
 .cart__header{
     font-weight: bold;
@@ -859,3 +858,4 @@ footer{
     font-size: 30px;
     text-decoration: underline;
   }
+
