@@ -4,6 +4,7 @@
     include "../model/sanpham.php";
     include "../model/danhmuc.php";
     include "../model/khachhang.php";
+    include "../model/momo.php";
     include "header.php";
     if(isset($_GET['act'])){
         $act = $_GET['act'] ;
@@ -37,6 +38,9 @@
                     include "taikhoan/thongtintaikhoan.php";
                 }
                 break;
+            case 'quenmatkhau':
+                include 'taikhoan/quenmatkhau.php';
+                break;
             case 'giohang':
                     $user_then_check = check_user($_SESSION['userName']);
                     if(isset($_SESSION['userName'])){
@@ -44,10 +48,8 @@
                         $sumMoney_upload_prds_on_cart = sumMoney_upload_prds_on_cart();
                         include "giohang/tranggiohang.php";
                     }else{
-                        include "giohang/giohangrong.php";
+                        include "taikhoan/dangnhap.php";
                     }
-
-                   
                 break;
             case 'sanpham':
                     include "sanpham/index.php";
@@ -69,12 +71,25 @@
                     include "sanpham/chitietsp.php";
                 break;
             case 'buy-now':    
-                include "trangthanhtoan.php";
+                $user_then_check = check_user($_SESSION['userName']);
+                if(isset($_SESSION['userName'])){
+                    //th1:Thanh toán chung tất cả sản phẩm
+                    if($_GET['buy'] == 'buyall' && isset($_GET['buy'])){
+                        $prds_on_cart = upload_prds_on_cart($user_then_check['ten_kh']);
+                        $sum_abate = sum_abate();
+                    }
+                    include "trangthanhtoan.php";
+                }else{
+                    include "taikhoan/dangnhap.php";
+                }
+                break;
+            case 'thanhtoanatmmomo':
+                $prds_on_cart = upload_prds_on_cart($user_then_check['ten_kh']);
+                $sum_abate = sum_abate();
+                include 'momo/thanhtoan_atm.php';
                 break;
             case 'giohang':    
-
                 include "tranggiohang.php";
-
                 break;
             default:
                 include "home.php";

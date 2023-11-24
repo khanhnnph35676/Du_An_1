@@ -6,6 +6,12 @@
         $list_prds = pdo_query($sql);
         return $list_prds;
     } 
+    function upload_prds_hot(){
+        $sql = "SELECT *,gia_sp * (100 - giam_gia)/100 as giagiam FROM san_pham 
+                order by luot_thich asc";
+        $list_prds = pdo_query($sql);
+        return $list_prds;
+    } 
 // Trang sản phẩm
     function upload_prds_6(){
         $sql = "SELECT *,gia_sp * (100 - giam_gia)/100 as giagiam FROM san_pham 
@@ -26,12 +32,11 @@
     }
 //selcet sản phẩm trong giỏ hàng
     function upload_prds_on_cart($userName){
-        $sql = "SELECT gio_hang.*,san_pham.*,gia_sp * (100 - giam_gia)/100 as giagiam,SUM(so_luong_them) as tongsoluong FROM gio_hang 
+        $sql = "SELECT t.*,gio_hang.*,san_pham.*,gia_sp * (100 - giam_gia)/100 as giagiam,SUM(so_luong_them) as tongsoluong FROM gio_hang 
         JOIN san_pham ON gio_hang.id_sp = san_pham.id
         JOIN tai_khoan_kh t ON t.id = gio_hang.id_kh
         WHERE t.ten_kh = '$userName'
         GROUP BY id_sp";
-                
         $prds_on_cart = pdo_query($sql);
         return $prds_on_cart;
     }
@@ -41,9 +46,43 @@
         $prds_on_cart = pdo_query($sql);
         return $prds_on_cart;
     }
-    // xoá sản phẩm trong giỏ hàng
+// xoá sản phẩm trong giỏ hàng
     function delete_prd_on_cart($id){
         $sql = "DELETE FROM gio_hang WHERE id_sp = '$id'";
         pdo_execute($sql);
     }
+// thanh toán
+function abate_prds($userName,$id){
+    $sql = "SELECT t.*,gio_hang.*,san_pham.*,gia_sp * (100 - giam_gia)/100 as giagiam,SUM(so_luong_them) as tongsoluong FROM gio_hang 
+    JOIN san_pham ON gio_hang.id_sp = san_pham.id
+    JOIN tai_khoan_kh t ON t.id = gio_hang.id_kh
+    WHERE t.ten_kh = '$userName' and san_pham.id = '$id'
+    GROUP BY id_sp";
+    $prds_on_cart = pdo_query($sql);
+    return $prds_on_cart;
+}
+//tổng thanh toán
+function sum_abate(){
+    $sql = "SELECT gio_hang.*,san_pham.*,gia_sp * (100 - giam_gia)/100 as giagiam,SUM((gia_sp * (100 - giam_gia)/100) + 50000) as tongtien FROM gio_hang 
+    JOIN san_pham ON gio_hang.id_sp = san_pham.id";
+    $prds_on_cart = pdo_query_one($sql);
+    return $prds_on_cart;
+}
+//thêm vào đơn đặt hàng COD
+function abate($id_sp,$id_kh,$so_luong_dat){
+    $sql = "INSERT INTO dat_don_hang 
+    VALUES(NULL,'$id_sp','$id_kh','$so_luong_dat',1,1, current_timestamp())";
+    pdo_execute($sql);
+}
+//thêm vào đơn đặt hàng momo
+function abateMomo($id_sp,$id_kh,$so_luong_dat){
+    $sql = "INSERT INTO dat_don_hang 
+    VALUES(NULL,'$id_sp','$id_kh','$so_luong_dat',1,2, current_timestamp())";
+    pdo_execute($sql);
+}
+//Xoá khỏi giở hàng
+function delete_cart($id_kh){
+    $sql = "DELETE FROM gio_hang WHERE id_kh='$id_kh'";
+    pdo_execute($sql);
+}
 ?>

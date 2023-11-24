@@ -79,20 +79,25 @@
                     </div>
                 </div>
                 <button class="btn-show-prd prev" onclick="movePrd(-1)"><i class="fa-solid fa-chevron-up fa-rotate-270 fa-2xl"></i></button>
+                <?php
+                    $upload_prds_hot =upload_prds_hot();
+                    foreach($upload_prds_hot as $upload_prd_hot):
+                        extract($upload_prd_hot);
+                ?>
                 <div class="prd-wrapper">
                     <div class="s-product">
-                        <a href="index.php?act=chitietssp">
-                            <img src="../img/prd/prd2.png" alt="">
+                        <a href="index.php?act=chitietsp&id_sp=<?php echo $id?>">
+                            <img src="../img/prd/<?php echo $hinh_anh ?>" alt="">
                         </a>
                         <div class="content-product">
-                            <a href="">
-                                <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            <a href="index.php?act=chitietsp&id_sp=<?php echo $id?>">
+                                <strong><span style="font-size: 20px;" ><?php echo $ten_sp ?></span></strong>
                             </a>
                             <div class="price">
-                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                                <span><del> 3.000.000đ</del></span>
+                                <span><strong style="color: rgb(215, 16, 16);" ><?php echo number_format($giagiam)?>đ</strong></span>
+                                <span><del> <?php echo number_format($gia_sp,) ?>đ</del></span>
                             </div>
-                            <p>Chất Liệu: Vải nhập khẩu (da – bố – nhung) Nệm mousse D40 cao cấp Khung sườn: 100% gỗ dầu đã qua xử lý...</p>
+                            <p><?php echo $noi_dung_sp ?></p>
                             <div class="assess">
                                 <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
                                 <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
@@ -108,64 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="prd-wrapper">
-                    <div class="s-product">
-                        <a href="">
-                            <img src="../img/prd/prd3.png" alt="">
-                        </a>
-                        <div class="content-product">
-                            <a href="">
-                                <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                            </a>
-                            <div class="price">
-                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                                <span><del> 3.000.000đ</del></span>
-                            </div>
-                            <p>Chất Liệu: Vải nhập khẩu (da – bố – nhung) Nệm mousse D40 cao cấp Khung sườn: 100% gỗ dầu đã qua xử lý...</p>
-                            <div class="assess">
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                            </div>
-                            <div class="heart">
-                                <button>
-                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="prd-wrapper">
-                    <div class="s-product">
-                        <a href="index.php?act=chitietssp">
-                            <img src="../img/prd/prd4.png" alt="">
-                        </a>
-                        <div class="content-product">
-                            <a href="">
-                                <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                            </a>
-                            <div class="price">
-                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                                <span><del> 000.000đ</del></span>
-                            </div>
-                            <p>Chất Liệu: Vải nhập khẩu (da – bố – nhung) Nệm mousse D40 cao cấp Khung sườn: 100% gỗ dầu đã qua xử lý...</p>
-                            <div class="assess">
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                            </div>
-                            <div class="heart">
-                                <button>
-                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach;?>
                 <button class="btn-show-prd next" onclick="movePrd(1)"><i class="fa-solid fa-chevron-up fa-rotate-90 fa-2xl"></i></button>
             </div>
         </div>

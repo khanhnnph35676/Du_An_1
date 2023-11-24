@@ -14,5 +14,10 @@
         $user_then_check = pdo_query_one($sql);
         return $user_then_check;
     }
-
+// update sản phẩm
+    function update_user($sdt,$dia_chi,$email,$id){
+        $sql = "UPDATE tai_khoan_kh SET sdt='$sdt',dia_chi='$dia_chi',email='$email' WHERE id=$id";
+        $user_then_check = pdo_query_one($sql);
+        return $user_then_check;
+    }
 ?>
