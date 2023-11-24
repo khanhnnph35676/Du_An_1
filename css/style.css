@@ -10,7 +10,7 @@
     position: fixed;
     width: 100%;
     height: auto;
-    z-index: 1;
+    z-index: 1111;
 }
 
 header{
@@ -280,6 +280,7 @@ ul li a{
 
 .prd-wrapper{
     display: none ;
+    overflow: hidden;
 }
 
 .s-product{
@@ -291,6 +292,7 @@ ul li a{
     border-radius: 5px;
     margin:30px 10px 30px 10px;
     z-index: 1;
+    overflow: hidden;
 }
 
 .icon-dms{
@@ -741,7 +743,6 @@ footer{
 .cart__content{
     margin: 10px;
     padding: auto;
-    width: 900px;
 }
 .cart__header{
     font-weight: bold;
@@ -859,6 +860,7 @@ footer{
     font-size: 30px;
     text-decoration: underline;
   }
+
   /* Trang đăng ký */
   .signup__container {
     background-color: #fff;
