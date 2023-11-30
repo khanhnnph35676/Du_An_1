@@ -1,15 +1,18 @@
 // let str = document.querySelector('#str');
 // let store = document.querySelector('.store');
+let diretory = document.querySelector('#diretory');
+let main_dm = document.querySelector('.main_dm');
 function click(button,content){
     button.addEventListener('click', function() {
         if (content.style.display === 'none') {
             content.style.display = 'block';
-        } else {
+        }else{
             content.style.display = 'none';
         }
     });
 }
 
+click(diretory,main_dm);
 // let click_heat =document.querySelector('.click-heat');
 // let heat = document.querySelector('.heat');
 
@@ -36,6 +39,7 @@ function autoSlide(){
     autoImg = setTimeout(autoSlide, 5000);
 }
 autoSlide();
+
 let prd = document.querySelectorAll('.prd-wrapper');
 function showPrd(){
     if(index >= prd.length){
@@ -54,5 +58,3 @@ showPrd();
 function movePrd(n){
     showPrd(index +=n);
 }
-
-     

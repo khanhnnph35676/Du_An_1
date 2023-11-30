@@ -136,16 +136,13 @@ ul li :hover{
 /* end header */
 
 /* banner */
-.slide img{
-    width: 100%;
-    margin-top: 83px;
-}
+
 
 /* end baner */
 
 /* MAIN */
 main{
-    margin:25px 0px 25px 0px;
+    padding:25px 0px 25px 0px;
     overflow: hidden;
 }
 
@@ -154,7 +151,6 @@ main{
     display: flex;  
     gap: 10px;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .hot-prd a img{
@@ -174,11 +170,11 @@ main{
 /* Lượt sản phẩm 2 */
 .headline{
     text-align: center;
-    margin-top: 29px;
+    margin-top: 49px;
 }
 
 .prd{
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 50px 0px;
 }
 
 .prd h1{
@@ -189,6 +185,7 @@ main{
 
 .categories-prd{
     text-align: center;
+    margin: 10px 0px 30px 0px; 
 }
 
 .categories-prd ul li{
@@ -242,12 +239,13 @@ ul li a{
 
 .assess{
     display: flex;
+    margin-top: 20px;
 }
 
 .heart button{
     border: none;
     background: inherit;
-    margin: 30px 0px 10px 90%;
+    margin: 60px 0px 10px 90%;
 }
 
 .heart .heat{
@@ -277,20 +275,33 @@ ul li a{
 .bg{
     height: 400px;
 }
-
-.prd-wrapper{
-    display: none ;
+.swiper-container{
+    background: rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
     overflow: hidden;
 }
+
+.swiper {
+    width: 35%;
+}
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .s-product{
     display: flex;
     gap: 20px;
     background: white;
     padding:20px;
-    width: 700px;
     border-radius: 5px;
-    margin:30px 10px 30px 10px;
+    margin:10px;
     z-index: 1;
     overflow: hidden;
 }
@@ -298,7 +309,8 @@ ul li a{
 .icon-dms{
     display: grid;
     gap: 30px;
-    margin-right: 200px;
+    align-self: center;
+    padding-left: 100px;
 }
 
 .icon-dm{
@@ -430,6 +442,10 @@ footer{
 
 .policy{
     flex: .5;
+}
+.diretory__footer{
+    color: white;
+    display: block;
 }
 /* 
 .store{
@@ -853,7 +869,8 @@ footer{
   margin: 30px 0;
   border-radius: 30px;
   transition: 0.5em;;
-  }.product__add-to-cart:hover{
+  }
+  .product__add-to-cart:hover{
     background: #437681;
   }
   .product__number{
@@ -910,9 +927,7 @@ footer{
   .signup__btn--1 {
     margin-right: 367px; 
   }
-  button:hover {
-    background-color: #094e63;
-  }
+
   .signup__tologin{
     text-align: center;
     margin-top: 20px;
@@ -1205,4 +1220,119 @@ footer{
 }
 .accpass__btn--resend:hover{
     background: none;
+}
+/* ===============css cho san pham================= */
+.swiper {
+    width: 750px;
+    height: 100%;
+   }
+
+  .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner{
+      width: 100%;
+      height: 100%;
+  }
+  .banner img{
+      width: 100%;;
+      height: 40%;
+      padding-top: 60px;
+  }
+  .product-container--1,.product-container--2 {
+    display: flex;
+    overflow: hidden;
+    margin: auto !important;
+    border: 1px solid rgb(230, 225, 225);
+    padding: 10px 0px 10px 0px;
+    border-radius: 5px;
+  }
+
+  .product-wrapper--1,.product-wrapper--2{
+    display: flex;
+    transition: transform 0.5s; /* Thời gian di chuyển */
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .product--1,.product--2 {
+    flex: 0 0 303px; /* Độ rộng của mỗi sản phẩm */
+    border-radius: 5px;
+    border: 1px solid rgb(238, 234, 234);
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 0 5px rgb(211, 209, 209);
+  }
+  .product--2 a img,.product--1 a img{
+    width: 100%;
+    height: 300px;
+  }
+  .name__prd{
+    text-decoration: none;
+    color: black;
+  }
+  .img__prd-wrapper{
+    border-radius: 10px;
+    width: 99%;
+    height: 280px;
+    overflow: hidden;
+    transition: 0.5s ease;
+    margin-bottom: 30px;
+  }
+  .img__prd-wrapper:hover{
+   transform: scale(1.02);
+  }
+
+  .add-to-cart{
+    position: absolute;
+    transition: .7s ease;
+    top: 110%;
+  }
+  .product--1:hover .add-to-cart{
+    display: block;
+    top: 90%;
+  }
+  .product--2:hover .add-to-cart{
+    display: block;
+    top: 90%;
+  }
+.btn-atc{
+    padding:5px 10px 5px 10px;
+    border-radius: 5px;
+    background: #106F85;
+    border: none ;
+    color: white;
+}
+.prd-wapper{
+    position: relative;
+    overflow: hidden;
+}
+.prd-wapper:hover .btn__prd{
+    display: block;
+}
+#nextButton, #nextButton2{
+    right: 1%;
+    top: 40%;
+}   
+#previousButton, #previousButton2{
+    left: 1%;
+    top: 40%;
+}
+.btn__prd{
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    padding: 10px;
+    display: none;
+}
+.btn__prd:hover{
+    background: black;
+}
+
+
+.all-stars{
+    padding-top: 10px;
 }

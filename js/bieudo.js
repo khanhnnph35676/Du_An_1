@@ -122,3 +122,6 @@ function drawChart2() {
   chart.draw(data, options);
 }
 google.charts.load('upcoming', {'packages': ['vegachart']}).then(drawChart2);
+// ==============biểu đồ chart.js===========
+
+

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- header -->
@@ -60,16 +60,24 @@
         </div>
     </div>
     <!-- banner -->
-    <div class="banner container-full">
-        <div class="slide">
-            <img src="./img/banner/Property 1=Default.png" alt="">
+    <div class="swiper mySwiper banner">
+        <div class="swiper-wrapper banner-wrapper">
+            <div class="swiper-slide banner">
+                <img src="./img/banner/baner2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner/baner2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner/baner2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner/baner2.png" alt="">
+            </div>
         </div>
-        <div class="slide">
-            <img src="./img/banner/baner2.png" alt="">
-        </div>
-        <div class="slide">
-            <img src="./img/banner/baner3.png" alt="">
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
     <!-- main -->
     <main> 
@@ -86,7 +94,6 @@
             <div class="headline">
                 <h1>SẢN PHẨM NỔI BẬT</h1>
             </div>
-            
             <!--Danh mục nhỏ trong mục lớn này-->
             <div class="categories-prd">
                 <ul>
@@ -95,203 +102,310 @@
                     <li><a href="">kakdw</a></li>
                 </ul>
             </div>
-
-            <!-- Tất cả sản phẩm trong mục lớn -->
-            <div class="products">
-                <div class="product">
-                    <a href="">
-                        <img src="./img/prd/prd1.png" alt="">
-                    </a>
-                    <a href="">
-                        <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                    </a>
-                    <div class="price">
-                        <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                        <span><del> 3.000.000đ</del></span>
-                    </div>
-                    <div class="assess">
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                    </div>
-                    <div class="heart">
-                        <button class="click-heat">
-                            <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                        </button>
-                        <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+            <!-- sản phẩm -->
+            <div class="prd-wapper container">
+                <div class="product-container--2">
+                    <div class="product-wrapper--2">
+                        <div class="product--2">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product--2">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product--2">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product--2">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product--2">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product--2">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                <!-- Thêm các sản phẩm khác vào đây -->
                     </div>
                 </div>
-                <div class="product">
-                    <a href="">
-                        <img src="./img/prd/prd1.png" alt="">
-                    </a>
-                    <a href="">
-                        <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                    </a>
-                    <div class="price">
-                        <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                        <span><del> 3.000.000đ</del></span>
-                    </div>
-                    <div class="assess">
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                    </div>
-                    <div class="heart">
-                        <button class="click-heat">
-                            <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                        </button>
-                        <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
-                    </div>
-                </div>
-                <div class="product">
-                    <a href="">
-                        <img src="./img/prd/prd1.png" alt="">
-                    </a>
-                    <a href="">
-                        <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                    </a>
-                    <div class="price">
-                        <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                        <span><del> 3.000.000đ</del></span>
-                    </div>
-                    <div class="assess">
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                    </div>
-                    <div class="heart">
-                        <button class="click-heat">
-                            <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                        </button>
-                        <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
-                    </div>
-                </div>
-                <div class="product">
-                    <a href="">
-                        <img src="./img/prd/prd1.png" alt="">
-                    </a>
-                    <a href="">
-                        <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                    </a>
-                    <div class="price">
-                        <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                        <span><del> 3.000.000đ</del></span>
-                    </div>
-                    <div class="assess">
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                    </div>
-                    <div class="heart">
-                        <button class="click-heat">
-                            <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                        </button>
-                        <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
-                    </div>
-                </div>
+            <button class="btn__prd" id="previousButton2"><i class="fa-solid fa-chevron-up fa-rotate-270 fa-2xl" style="color: #fafafa;"></i></button>
+            <button class="btn__prd" id="nextButton2"><i class="fa-solid fa-chevron-up fa-rotate-90 fa-2xl" style="color: #ffffff;"></i></button>
             </div>
         </div>
         <!-- sản phẩm lần 3 -->
-        <div class="show-prd container">
-            <div class="content-s-prd container">
-                <button class="btn-show-prd prev" onclick="movePrd(-1)"><i class="fa-solid fa-chevron-up fa-rotate-270 fa-2xl"></i></button>
-                <div class="prd-wrapper">
-                    <div class="s-product">
-                        <a href="">
-                            <img src="./img/prd/prd1.png" alt="">
-                        </a>
-                        <div class="content-product">
+        <div class="swiper-container ">
+            <div class="icon-dms">
+                <div class="icon-dm">
+                    <a href=""><img src="../img/icon-dm/Rectangle 90.png" alt=""></a>
+                    <a href=""><img src="../img/icon-dm/Rectangle 91.png" alt=""></a>
+                    <a href=""><img src="../img/icon-dm/Rectangle 92.png" alt=""></a>
+                </div>
+                <div class="icon-dm">
+                    <a href=""><img src="../img/icon-dm/Rectangle 93.png" alt=""></a>
+                    <a href=""><img src="../img/icon-dm/Rectangle 94.png" alt=""></a>
+                    <a href=""><img src="../img/icon-dm/Rectangle 95.png" alt=""></a>
+                </div>
+                <div class="icon-dm">
+                    <a href=""><img src="../img/icon-dm/Rectangle 96.png" alt=""></a>
+                    <a href=""><img src="../img/icon-dm/Rectangle 97.png" alt=""></a>
+                    <a href=""><img src="../img/icon-dm/Rectangle 98.png" alt=""></a>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="s-product">
                             <a href="">
-                                <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                                <img src="./img/prd/prd1.png" alt="">
                             </a>
-                            <div class="price">
-                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                                <span><del> 3.000.000đ</del></span>
+                            <div class="content-product">
+                                <a href="">
+                                    <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                                </a>
+                                <div class="price">
+                                    <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                    <span><del> 3.000.000đ</del></span>
+                                </div>
+                                <p>Chất Liệu: Vải nhập khẩu (da – bố – nhung) Nệm mousse D40 cao cấp Khung sườn: 100% gỗ dầu đã qua xử lý...</p>
+                                <div class="assess">
+                                    <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                    <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                    <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                    <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                    <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                </div>
+                                <div class="heart">
+                                    <button>
+                                        <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                    </button>
+                                </div>
                             </div>
-                            <p>Chất Liệu: Vải nhập khẩu (da – bố – nhung) Nệm mousse D40 cao cấp Khung sườn: 100% gỗ dầu đã qua xử lý...</p>
-                            <div class="assess">
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                            </div>
-                            <div class="heart">
-                                <button>
-                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                                </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="s-product">
+                            <a href="">
+                                <img src="./img/prd/prd1.png" alt="">
+                            </a>
+                            <div class="content-product">
+                                <a href="">
+                                    <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                                </a>
+                                <div class="price">
+                                    <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                    <span><del> 3.000.000đ</del></span>
+                                </div>
+                                <p>Chất Liệu: Vải nhập khẩu (da – bố – nhung) Nệm mousse D40 cao cấp Khung sườn: 100% gỗ dầu đã qua xử lý...</p>
+                                <div class="assess">
+                                    <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                    <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                    <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                    <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                    <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                </div>
+                                <div class="heart">
+                                    <button>
+                                        <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="prd-wrapper">
-                    <div class="s-product">
-                        <a href="">
-                            <img src="./img/prd/prd2.png" alt="">
-                        </a>
-                        <div class="content-product">
-                            <a href="">
-                                <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                            </a>
-                            <div class="price">
-                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                                <span><del> 3.000.000đ</del></span>
-                            </div>
-                            <p>Chất Liệu: Vải nhập khẩu (da – bố – nhung) Nệm mousse D40 cao cấp Khung sườn: 100% gỗ dầu đã qua xử lý...</p>
-                            <div class="assess">
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                            </div>
-                            <div class="heart">
-                                <button>
-                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="prd-wrapper">
-                    <div class="s-product">
-                        <a href="">
-                            <img src="./img/prd/prd3.png" alt="">
-                        </a>
-                        <div class="content-product">
-                            <a href="">
-                                <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                            </a>
-                            <div class="price">
-                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                                <span><del> 3.000.000đ</del></span>
-                            </div>
-                            <p>Chất Liệu: Vải nhập khẩu (da – bố – nhung) Nệm mousse D40 cao cấp Khung sườn: 100% gỗ dầu đã qua xử lý...</p>
-                            <div class="assess">
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                            </div>
-                            <div class="heart">
-                                <button>
-                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="btn-show-prd next" onclick="movePrd(1)"><i class="fa-solid fa-chevron-up fa-rotate-90 fa-2xl"></i></button>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
         <!-- sản phẩm lần 4 -->
@@ -300,7 +414,6 @@
             <div class="headline">
                 <h1>SẢN PHẨM NỔI BẬT</h1>
             </div>
-            
             <!--Danh mục nhỏ trong mục lớn này-->
             <div class="categories-prd">
                 <ul>
@@ -309,109 +422,225 @@
                     <li><a href="">kakdw</a></li>
                 </ul>
             </div>
-
-            <!-- Tất cả sản phẩm trong mục lớn -->
-            <div class="products">
-                <div class="product">
-                    <a href="">
-                        <img src="./img/prd/prd1.png" alt="">
-                    </a>
-                    <a href="">
-                        <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                    </a>
-                    <div class="price">
-                        <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                        <span><del> 3.000.000đ</del></span>
-                    </div>
-                    <div class="assess">
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                    </div>
-                    <div class="heart">
-                        <button class="click-heat">
-                            <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                        </button>
-                        <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+            <!-- sản phẩm -->
+            <div class="prd-wapper container">
+                <div class="product-container--1">
+                    <div class="product-wrapper--1">
+                        <div class="product--1">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product--1">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product--1">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product--1">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product--1">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product--1">
+                            <div class="img__prd-wrapper">
+                                <a href="" class="link-img__prd-wrapper">
+                                    <img src="../img/prd/anh0.jpg" alt="">
+                                </a>
+                            </div>
+                            
+                            <a class="name__prd" href="">
+                                <strong><span  style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
+                            </a>
+                            <div class="price">
+                                <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
+                                <span><del> 3.000.000đ</del></span>
+                            </div>
+                            <div class="assess">
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                                <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="heart">
+                                <form action="">
+                                <button class="click-heat">
+                                    <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
+                                </button>
+                                </form>
+                                <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="" method="">
+                                    <button class="btn-atc">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                <!-- Thêm các sản phẩm khác vào đây -->
                     </div>
                 </div>
-                <div class="product">
-                    <a href="">
-                        <img src="./img/prd/prd1.png" alt="">
-                    </a>
-                    <a href="">
-                        <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                    </a>
-                    <div class="price">
-                        <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                        <span><del> 3.000.000đ</del></span>
-                    </div>
-                    <div class="assess">
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                    </div>
-                    <div class="heart">
-                        <button class="click-heat">
-                            <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                        </button>
-                        <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
-                    </div>
-                </div>
-                <div class="product">
-                    <a href="">
-                        <img src="./img/prd/prd1.png" alt="">
-                    </a>
-                    <a href="">
-                        <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                    </a>
-                    <div class="price">
-                        <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                        <span><del> 3.000.000đ</del></span>
-                    </div>
-                    <div class="assess">
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                    </div>
-                    <div class="heart">
-                        <button class="click-heat">
-                            <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                        </button>
-                        <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
-                    </div>
-                </div>
-                <div class="product">
-                    <a href="">
-                        <img src="./img/prd/prd1.png" alt="">
-                    </a>
-                    <a href="">
-                        <strong><span style="font-size: 20px;" >Nội thất phòng khách ND01</span></strong>
-                    </a>
-                    <div class="price">
-                        <span><strong style="color: rgb(215, 16, 16);" >2.000.000đ</strong></span>
-                        <span><del> 3.000.000đ</del></span>
-                    </div>
-                    <div class="assess">
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                        <i class="fa-solid fa-star fa-xl" style="color: #ffc800;"></i>
-                    </div>
-                    <div class="heart">
-                        <button class="click-heat">
-                            <i class="fa-regular fa-heart fa-2xl" style="color: #c32222;"></i>
-                        </button>
-                        <i class="fa-solid fa-heart fa-2xl heat" style="color: #c32222;"></i>
-                    </div>
-                </div>
+                <button class="btn__prd" id="previousButton"><i class="fa-solid fa-chevron-up fa-rotate-270 fa-2xl" style="color: #fafafa;"></i></button>
+                <button class="btn__prd" id="nextButton"><i class="fa-solid fa-chevron-up fa-rotate-90 fa-2xl" style="color: #ffffff;"></i></button>
             </div>
         </div>
         <!-- Khách bình luận-->
@@ -423,7 +652,14 @@
                         <div class="icon-user">
                             <img src="./img/banner/baner2.png" alt="">
                         </div>
-                        <p>Bình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang web</p>
+                        <div class="all-stars">
+                            <i class="fa-solid fa-star fa-lg" style="color: #ffc800;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #ffc800;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #ffc800;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #ffc800;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #ffc800;"></i>
+                        </div>
+                        <p class="cmt__desc">Bình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang web</p>
                     </div>
                 </div>
             </div>
@@ -460,7 +696,112 @@
             <h2>CHÍNH SÁCH</h2>
         </div>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+// =========slider================
+function createSwiper(containerClass, options) {
+    return new Swiper(containerClass, options);
+}
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    },
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+});
+//=========sản phẩm================
+function moveAndPause(wrapper, products, currentIndex, productWidth) {
+  if (currentIndex < products.length - 4) {
+    currentIndex++;
+    wrapper.style.transform = 'translateX(' + (-productWidth * currentIndex) + 'px)';
+  } else {
+    currentIndex = 0;
+    wrapper.style.transform = 'translateX(0)';
+  }
+  setTimeout(function () {
+    moveAndPause(wrapper, products, currentIndex, productWidth);
+  }, 3000); // Nghỉ 3 giây trước khi di chuyển tiếp
+}
+
+var productWrapper1 = document.querySelector('.product-wrapper--1');
+var products1 = document.querySelectorAll('.product--1');
+var currentIndex1 = 0;
+var productWidth1 = products1[0].offsetWidth + 10; // Độ rộng của mỗi sản phẩm, bao gồm cả khoảng cách
+
+// Gọi hàm di chuyển và tạm dừng ban đầu
+setTimeout(function () {
+  moveAndPause(productWrapper1, products1, currentIndex1, productWidth1);
+}, 3000);
+
+// Xử lý sự kiện khi nhấp vào nút "Previous"
+var previousButton1 = document.getElementById('previousButton');
+previousButton1.addEventListener('click', function () {
+  if (currentIndex1 > 0) {
+    currentIndex1--;
+    productWrapper1.style.transform = 'translateX(' + (-productWidth1 * currentIndex1) + 'px)';
+  } else {
+    currentIndex1 = products1.length - 4;
+    productWrapper1.style.transform = 'translateX(' + (-productWidth1 * currentIndex1) + 'px)';
+  }
+});
+var nextButton1 = document.getElementById('nextButton');
+nextButton1.addEventListener('click', function () {
+  if (currentIndex1 < products1.length - 4) {
+    currentIndex1++;
+    productWrapper1.style.transform = 'translateX(' + (-productWidth1 * currentIndex1) + 'px)';
+  } else {
+    currentIndex1 = 0;
+    productWrapper1.style.transform = 'translateX(0)';
+  }
+});
+
+var productWrapper2 = document.querySelector('.product-wrapper--2');
+var products2 = document.querySelectorAll('.product--2');
+var currentIndex2 = 0;
+var productWidth2 = products2[0].offsetWidth + 10; // Độ rộng của mỗi sản phẩm, bao gồm cả khoảng cách
+
+// Gọi hàm di chuyển và tạm dừng ban đầu
+setTimeout(function () {
+  moveAndPause(productWrapper2, products2, currentIndex2, productWidth2);
+}, 3000);
+
+// Xử lý sự kiện khi nhấp vào nút "Next"
+var nextButton2 = document.getElementById('nextButton2');
+nextButton2.addEventListener('click', function () {
+  if (currentIndex2 < products2.length - 4) {
+    currentIndex2++;
+    productWrapper2.style.transform = 'translateX(' + (-productWidth2 * currentIndex2) + 'px)';
+  } else {
+    currentIndex2 = 0;
+    productWrapper2.style.transform = 'translateX(0)';
+  }
+});
+
+// Xử lý sự kiện khi nhấp vào nút "Previous"
+var previousButton2 = document.getElementById('previousButton2');
+previousButton2.addEventListener('click', function () {
+  if (currentIndex2 > 0) {
+    currentIndex2--;
+    productWrapper2.style.transform = 'translateX(' + (-productWidth2 * currentIndex2) + 'px)';
+  } else {
+    currentIndex2 = products2.length - 4;
+    productWrapper2.style.transform = 'translateX(' + (-productWidth2 * currentIndex2) + 'px)';
+  }
+});
+
+</script>
 </body>
-<script src="./js/main.js"></script>
+<!-- <script src="../js/main.js"></script> -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
