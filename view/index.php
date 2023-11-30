@@ -67,8 +67,8 @@
                     if(isset($_GET['id_sp'])){
                         $id = $_GET['id_sp'];
                         $prd = upload_prd($id);
+                        include "sanpham/chitietsp.php";
                     }
-                    include "sanpham/chitietsp.php";
                 break;
             case 'buy-now':    
                 $user_then_check = check_user($_SESSION['userName']);

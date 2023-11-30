@@ -27,17 +27,18 @@
                 </div>
                 <p class="product__description"><?php echo $prd['noi_dung_sp']?></p>    
                 <form action="" method="POST">
-                <div class="">Số lượng:
-                  <input type="number" value="1" min="0" name="product__quantity" class="product__quantity">
-                </div>
-                <br>
-                <!--TH1:"KH thêm vào giỏ hàng "Tạo 1 form để lưu lại đơn hàng -->
-                <input type="text" name="id_kh" value="<?php echo isset($user_then_check['id'])?$user_then_check['id']:'' ?>"  hidden>
-                <input type="text" name="id_sp" value="<?php echo $prd['id'] ?>" hidden >
-                <button class="product__add-to-cart" name ="add_to_cart">Thêm vào giỏ hàng</button>
-                <button class="buy-now"><a href="?act=buy-now">Mua ngay</a></button>
-              </form>
-              <div class="product__phone">Gọi điện để được tư vấn: <div class="product__number">0985016662</div>
+                  <div class="">Số lượng:
+                    <input type="number" value="1" min="0" name="product__quantity" class="product__quantity">
+                  </div>
+                  <br>
+                  <!--TH1:"KH thêm vào giỏ hàng "Tạo 1 form để lưu lại đơn hàng -->
+                  <input type="text" name="id_kh" value="<?php echo isset($user_then_check['id'])?$user_then_check['id']:'' ?>" >
+                  <input type="text" name="id_sp" value="<?php echo $prd['id'] ?>" >
+                  <button class="product__add-to-cart" name ="add_to_cart">Thêm vào giỏ hàng</button>
+                  <button class="buy-now"><a href="?act=buy-now">Mua ngay</a></button>
+                </form>
+                <?=var_dump($prd);?>
+                <div class="product__phone">Gọi điện để được tư vấn: <div class="product__number">0985016662</div>
               </div>
             </div>
           </div>

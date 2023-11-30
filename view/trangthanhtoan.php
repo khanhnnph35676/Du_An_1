@@ -92,7 +92,7 @@
                 <div class="product-name"><?php echo $ten_sp?></div>
                     <div class="product-price"><?php echo number_format($giagiam,)?>đ</div>
                 </div>
-                <div class="quantyti-prd"><?php echo $tongsoluong?></div>
+                <div class="quantyti-prd"><?php echo $so_luong_them?></div>
             </div>
             <?php endforeach;?>
             <div class="order-summary">
@@ -122,7 +122,7 @@
                      <input type="text" name="dia_chi" value="<?php echo $dia_chi?>" hidden>
                      <input type="number" name="id_sp" value="<?php echo $id_sp?>" hidden >
                      <input type="number" name="id_kh" value="<?php echo $id_kh?>" hidden>
-                    <input type="number" name="so_luong_dat" value="<?php echo $tongsoluong?>"  hidden>
+                    <input type="number" name="so_luong_dat" value="<?php echo $so_luong_them?>"  hidden>
                 <?php endforeach;?>
                 <button class="checkout-button" name='submit'>Đặt hàng</button>
                 <span><?php echo isset($error['error-email'])? $error['error-email']:'';
