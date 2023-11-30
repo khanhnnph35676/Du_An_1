@@ -41,7 +41,7 @@ header{
 .search form button{
     position: absolute;
     margin-top: 7px;
-    margin-left: -40px;
+    margin-left: 360px;
     border: none;
     background: white;
 }
