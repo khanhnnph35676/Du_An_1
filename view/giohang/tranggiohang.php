@@ -26,7 +26,7 @@
                     <td><img src="../img/prd/<?php echo $hinh_anh ?>" alt="Sản phẩm 1" style="width: 50px;"></td>
                     <td><?php echo $ten_sp?></td>
                     <td style="color: #106F85;"><?php echo number_format($gia_sp)?>đ</td>
-                    <td><input type="number" value="<?php echo $tongsoluong ?>" min="1"></td>
+                    <td><input type="number" value="<?php echo $so_luong_them ?>" min="1"></td>
                     <td style="color: #106F85;"><?php echo number_format($giagiam)?>đ</td>
                     <td><button class="btn btn-danger">
                     <a href="sanpham/xoaspgiohang.php?id_gio_hang=<?php echo $id_sp?>"onclick="return confirm('Bạn muốn xoá sản phẩm này khỏi giỏ hàng của mình?')">Xoá</a>

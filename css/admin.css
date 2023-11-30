@@ -6,8 +6,16 @@
 
 header a{
     color: black;
+    text-decoration: none;
 }
 
+li{
+    display: block;
+}
+.color-grey-font\[12px\]{
+    font-size: 12px;
+    color: #888888;
+}
 /* header */
 header{
     height: 70px;
@@ -15,20 +23,56 @@ header{
     position: fixed;
     z-index: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0px 50px 0px 40px;
 }
 
-.img-element-wrapper{
-    display: flex;
+.element{
+   display: flex;
+   align-items: center;
 }
 
+.controll-acount li{
+    display: block;
+    position: relative;
+}
+
+
+.controll-acount{
+    margin-top: 10px;
+}
 .controll-acount li ul{
     display: none;
+    position: absolute;
+}
+.controll-acount li ul li a:hover{
+    color: #938c8c;
+}
+
+.controll-acount li:hover ul{
+    display: block;
+    background: rgb(239, 236, 236);
+    border-radius: 10px;
+    width: 130px;
 }
 
 .img__element{
-    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+}
+
+.dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(30, 255, 0);
+    margin-left: 66px;
+    top: 63%;
 }
 
 ul li a{
@@ -41,6 +85,28 @@ ul li a{
     border-bottom:1px solid rgb(33, 108, 123);
 }
 
+.search {
+    position: relative;
+}
+.search input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.search button{
+    position: absolute;
+    background: inherit;
+    border: none;
+    top: 20%;
+    right: 4%;
+}
+#diretory{
+    border: none;
+    background: inherit;
+}
 /* main */
 
 main {
@@ -48,7 +114,7 @@ main {
 }
 
 .box-left{
-    width:251px ;
+    width:201px ;
     height:1000vh;
     background: rgb(255, 255, 255);
     border-left: 1px solid rgb(190, 187, 187);
@@ -57,11 +123,11 @@ main {
 }
 
 .content-box-left{
-    width: 250px;
+    width: 200px;
     border-left: 1px solid rgb(190, 187, 187);
     border-right: 1px solid rgb(190, 187, 187);
     background: rgb(255, 255, 255);
-    padding:120px 10px 0px 10px;
+    padding:100px 10px 0px 10px;
     max-height: 100vh;
     overflow-y: scroll;
     position: fixed;
@@ -92,7 +158,7 @@ main {
 .center{
     flex: 1;
     background: rgb(240, 237, 237);
-    padding: 120px 30px 50px 310px;
+    padding: 120px 30px 50px 230px;
 }
 
 .box1{
@@ -104,12 +170,12 @@ main {
     flex: 1;
     background: white;
     padding: 20px 20px 10px 20px;
+    overflow: hidden;
 }
 
 .statistic-prd{
     flex: .5;
     background: white;
-    width: 500px;
 }
 
 .sattistic{
@@ -162,8 +228,7 @@ main {
 }
 
 .day-revenue{
-    background: rgb(179, 182, 245);
-    margin:0px 10px 10px 10px;
+    overflow: hidden;
 }
 
 .headline{
@@ -188,21 +253,148 @@ main {
     flex: 1;
 }
 
-.box-month-prd h3,.all-statistic h3{
+.all-statistics{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.box-month-prd h3,.statistic h3{
     padding: 10px;
 }
 
-.all-statistic{
-    flex: .7;
+.statistic{
+    margin-top: 20px;
     background: white;
 }
 
 
 /* chức năng sản phẩm admin */
-.function-prds-box-month-prd{
-    padding-top: 100px;
-}
 
 .bgr-body{
     background: #f0eded;
+}
+
+/*======== prominent =========*/
+.prominent{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 30px;
+    gap: 30px;
+}
+.prd-prominet{
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+.img__prd-prominet-wrapper{
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+.img__prd-prominet{
+    width: 100%;
+    height: 160px;
+}
+.img__prd-prominet:hover{
+    transform: scale(1.1);
+}
+.name__prd-prominet a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ============Trang sản phẩm========== */
+.function-prds{
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    gap: 24px;
+}
+.gid-tpl-columns\[\.1\.5\]{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.function-prds-box-month-prd{
+    background: white !important;
+    padding: 10px;
+    height: 990px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.function-prds-box-month-prd .table-wrapper{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 85%;
+    box-sizing: border-box;
+}   
+.table-wrapper {
+    scrollbar-width: thin; /* Đặt kích thước mỏng cho thanh cuộn */
+    scrollbar-color: #888888 #ffffff; /* Đặt màu cho thanh cuộn */
+  }
+  
+  /* Cho trình duyệt Chrome */
+.table-wrapper::-webkit-scrollbar {
+    width: 3px; /* Đặt độ rộng cho thanh cuộn */
+}
+  
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Đặt màu cho phần thân của thanh cuộn */
+}
+  
+.table-wrapper::-webkit-scrollbar-track {
+    background-color: #ffffff; /* Đặt màu cho phần nền của thanh cuộn */
+}
+
+.function-prds-box-month-prd h5{
+    margin-top: 30px;
+}
+.form-function{
+    display: grid;
+}
+.form-function-wrapper{
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+.btn-action{
+    text-decoration: none;
+    color: black;
+    border: #06efff;
+    background: #006eff;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+.ranger{
+    background: rgb(216, 13, 13);
+}
+.input-group{
+    margin: 10px 0px 0px 0px;
+}
+.input__content{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px 5px 5px 5px;
+    background: #e8e9eb;
+    border: none;
+}
+.input__content--content{
+    height: 250px;
+    padding: 0;
+    margin: 0;
+}
+.btn-implement{
+    margin: 30px 0px 10px 0px;
+}
+/* =========danh mục======== */
+.main_dm{
+    position: relative;
+    padding: 0;
+    display: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.main_dm li{
+    display: inline-block;
 }
