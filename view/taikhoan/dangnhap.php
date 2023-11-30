@@ -29,3 +29,15 @@
             <button type="submit" name="log" class="btn btn-primary">Đăng nhập</button>
         </form>
     </section>
+    <script>
+    function validateForm() {
+        var password = document.getElementById("exampleInputPassword1").value;
+
+        if (password !== "123456") { // Thay YOUR_PASSWORD bằng mật khẩu mong muốn
+            document.getElementById("error-pass").innerHTML = "Bạn đã nhập sai mật khẩu";
+            return false;
+        }
+
+        return true;
+    }
+</script>
