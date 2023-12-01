@@ -84,7 +84,9 @@ header{
     display: flex;
     gap: 60px;
 }
-
+.bottom-header--icon{
+    display: none;
+}
 ul li{
     display: inline-block;
 }
@@ -948,6 +950,14 @@ footer{
 .signup__btn--resend:hover{
     background: none;
 }
+/* TRang đăng nhập */
+.form-log-wrapper{
+    display:inline-block;
+    width: 700px;
+    height: auto;
+    margin: 30px 400px 30px;
+    align-items: center;
+}
 /* Trang đơn hàng của bạn */
 .accountorder__boxphai{
     width: 230px;
@@ -957,6 +967,8 @@ footer{
 .accountorder__boxphai a{
     text-decoration: none;
     color: black;
+    margin-top: 15px;
+    display: block;
 }
 .accountorder__boxphai p{
     margin-top: 40px;
@@ -1335,4 +1347,27 @@ footer{
 
 .all-stars{
     padding-top: 10px;
+}
+
+
+/* responsive mobile */
+@media screen and (max-width: 768px) {
+    .bottom-header ul li {
+        display: none;
+        
+    }
+    .bottom-header--icon{
+        display: inline-block;
+        align-items:flex-end;
+    }
+    .bottom-header--icon i{
+      align-items: end;
+      display: inline-block;
+      margin-left: 300px;
+    }
+    .container{}
+    .hot-prd a img{
+        width: 50%;
+        justify-content: space-evenly;
+    }
 }
