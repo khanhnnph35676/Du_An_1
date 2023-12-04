@@ -162,6 +162,7 @@ main{
 
 .hot-prd a{
     overflow: hidden;
+    
 }
 
 .hot-prd a img:hover{
@@ -441,9 +442,11 @@ footer{
     margin-right: 5px;
     width: 39px;
 }
-
 .policy{
     flex: .5;
+}
+.policy ul li a{
+    color: #fff;
 }
 .diretory__footer{
     color: white;
@@ -1235,8 +1238,8 @@ footer{
 }
 /* ===============css cho san pham================= */
 .swiper {
-    width: 750px;
-    height: 100%;
+    width: auto;
+    height: auto;
    }
 
   .swiper-slide {
@@ -1351,23 +1354,296 @@ footer{
 
 
 /* responsive mobile */
-@media screen and (max-width: 768px) {
-    .bottom-header ul li {
+@media screen and (max-width: 600px) {
+    /* trang index */
+    .search form button{
+        position: absolute;
+        margin-top: 8px;
+        margin-left: 275px;
+        border: none;
+        background: white;
+        font-size: 10px;
+    }
+    .search form input{
+        width: 300px;
+        height: 30px;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .logo{
+        width: 10px;
+    }
+    #str,#acount{
+        font-size: 12px;
+    }
+    .store{
+        width: 140px;
+    }
+    
+   .bottom-header{
+    height: auto;
+   font-size: 14px;
+    margin-left: 55%;
+   }
+   .bottom-header ul{
+    gap: 7px;
+   display: grid;
+   grid-template-columns: 1fr;
+   margin: 5px;
+
+   }
+   .categories{
+    z-index: 1;
+
+   }
+
+   .categories ul{
+    display: none;
+   }
+    .bottom-header--icon{
+        margin-left: auto;
+        display: inline-block;
+        font-size: 19px;
+    }
+    /* Ẩn danh mục sản phẩm mặc định */
+#bottomHeader {
+    display: none;
+    position: absolute;
+  }
+  
+  /* Hiển thị danh mục sản phẩm khi có lớp .show */
+  #bottomHeader.show {
+    display: block;
+  }
+  
+ 
+    .banner img{
+        width: 100%;;
+        height: 40%;
+        padding-top: 120px;
+    }
+    .swiper-slide{
+        flex-wrap:wrap;
+    }
+    .hot-prd{
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .hot-prd a{
+        width: 45%;
+    
+    }
+    .icon-dms{
         display: none;
+    }
+    .swiper-container .swiper{
+        width: 200%;
+    }
+    .s-product{
+        display: inline;
+    }
+    .s-product a img{
+        width: 70%;
+        margin-left: 9%;
+    }
+    .price{
+        display: none;
+    }
+    .assess{
+        display: none;
+    }
+    .s-product .heart{
+        display: none;
+    }
+    .s-product p{
+        display: none;
+    }
+    .content-product a{
+        margin-left: 22%;
+    }
+    footer {
+        display: block;
         
     }
-    .bottom-header--icon{
-        display: inline-block;
-        align-items:flex-end;
+     .left-footer{
+        border: 11px;
+        margin-left: 0%;
+        border: 15px;
     }
-    .bottom-header--icon i{
-      align-items: end;
-      display: inline-block;
-      margin-left: 300px;
+    .content-footer{
+       text-align: center;
+       margin: 5px;
     }
-    .container{}
-    .hot-prd a img{
-        width: 50%;
-        justify-content: space-evenly;
+    .policy{
+       text-align: center;
+       margin: 5px;
+      
+    } 
+    /* TRang cart */
+    .cart__content{
+        font-size: 12px;
+        width: 100%;
     }
+    /* Trang chi tiet sp */
+    .product__ct{
+        width: 100%;
+        height: auto;
+
+    }
+    .product__details{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+    .product__info{
+        font-size: 12px;
+    }
+    .product__info h1{
+        font-size: 22px;
+        margin: 3%;
+    }
+    .product__price{
+        margin: 0%;
+    }
+    .product__status{
+        display: none;
+    }
+    .product__description{
+        display: none;
+    }
+    .product__quantity--out{
+        display: none;
+    }
+    .product__add-to-cart{
+        display: none;
+    }
+    .product__phone{
+        display: none;
+    }
+    .product__image{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main__image{
+        max-width: 70%;
+        height: auto;
+    }
+    .related-products{
+        width: 100%;
+        margin-left: 0%;
+    font-size: 12px;
+    }
+    .sum-relad {
+        width: 600px !important;
+        flex-wrap: wrap;
+      
+    }
+    center{
+        margin-left: 0%;
+        
+    }
+    .related-1{
+        margin: 2% 0%;
+        height: 300px;
+        width: 200px;
+    }
+    .title-product{
+       width: 200px !important;
+    }
+    .comment{
+        font-size: 12px;
+        width: 600px;
+    }
+    .img-user{
+        padding-bottom: 25px !important;
+    }
+    .text-1{
+        width: 600px !important;
+    }
+    .text-comments{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sb-comment{
+        width: 120px;
+    }
+    /* Trang chi tiet tin tuc */
+    .boxright{
+        display: none;
+    }
+    .headline{
+        font-size: 12px;
+        margin-left: 38px;
+    }
+    .content__news{
+        width: 580px;
+    }
+    /* Trang dang ky */
+    .signup__container{
+        font-size: 12px;
+    }
+    .signup__btn--1{
+        margin-right: 63.5%;
+    }
+    /* Trang doi mk tk */
+    .accinfo__boxtrai{
+        font-size: 12px;
+        width: 100px;
+        margin-right: 570px;
+    }
+    .accpass__container{
+        width: 500px;
+    }
+    /* Trang don hang cua ban */
+    .accountorder__boxtrai{
+        width: 600px;
+        margin-right: 140px;
+        font-size: 12px;
+    }
+    .accountorder__boxtrai--quantity{
+        font-size: 12px;
+        margin: 10px 50px 0px 10px;
+        width: 390px;
+    }
+    .accountorder__boxtrai--dropdown{
+
+        margin: 5px;
+    }
+    .dropdown-content{
+        margin: 0px;
+        padding: 0%;
+    }
+    .dropbtn{
+        font-size: 12px;
+        
+    }
+    .dropbtn span{
+        margin-right: 0px;
+    }
+    .dropbtn i{
+        width: 8px;
+    }
+    /* trang gioi thieu */
+    .img-introduce img{
+        width: 100% !important;
+    }
+    /* trang he thong cua hang */
+    /* .maps{
+        order: 2;
+    
+    }  
+    .form-group{
+        order: 1;
+    }
+     */
+    
 }
