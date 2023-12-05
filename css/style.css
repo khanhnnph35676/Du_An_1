@@ -56,7 +56,7 @@ header{
 .search form button{
     position: absolute;
     margin-top: 7px;
-    margin-left: -40px;
+    margin-left: 360px;
     border: none;
     background: white;
 }
@@ -99,7 +99,9 @@ header{
     display: flex;
     gap: 60px;
 }
-
+.bottom-header--icon{
+    display: none;
+}
 ul li{
     display: inline-block;
 }
@@ -175,6 +177,7 @@ main{
 
 .hot-prd a{
     overflow: hidden;
+    
 }
 
 .hot-prd a img:hover{
@@ -454,9 +457,11 @@ footer{
     margin-right: 5px;
     width: 39px;
 }
-
 .policy{
     flex: .5;
+}
+.policy ul li a{
+    color: #fff;
 }
 .diretory__footer{
     color: white;
@@ -963,6 +968,14 @@ footer{
 .signup__btn--resend:hover{
     background: none;
 }
+/* TRang đăng nhập */
+.form-log-wrapper{
+    display:inline-block;
+    width: 700px;
+    height: auto;
+    margin: 30px 400px 30px;
+    align-items: center;
+}
 /* Trang đơn hàng của bạn */
 .accountorder__boxphai{
     width: 230px;
@@ -972,6 +985,8 @@ footer{
 .accountorder__boxphai a{
     text-decoration: none;
     color: black;
+    margin-top: 15px;
+    display: block;
 }
 .accountorder__boxphai p{
     margin-top: 40px;
@@ -1238,8 +1253,8 @@ footer{
 }
 /* ===============css cho san pham================= */
 .swiper {
-    width: 750px;
-    height: 100%;
+    width: auto;
+    height: auto;
    }
 
   .swiper-slide {
@@ -1350,43 +1365,4 @@ footer{
 
 .all-stars{
     padding-top: 10px;
-}
-
-/* ===========các thông báo============ */
-/* 1 thông báo đăng xuất thành công */
-.succes_log_out-wrapper{
-    background: rgba(0, 0, 0, 0.108);
-     position: fixed;
-     top: 10%;
-     z-index: 1111;
-}
-.succes_log_out{
-   
-    width: 180px;
-    height: 70px;
-    background: rgb(236, 234, 234) !important;
-    border-radius: 10px;
-    position: relative;
-    top: 45%;
-    left: 45%;
-    padding: 5px;
-    z-index: 1111;
-    text-align: center;
-}
-.succes_log_out a {
-    text-decoration: none;
-    color: black;
-    position: absolute;
-    top: -50%;
-    margin-left: 3px;
-}
-.link-index{
-    border: 1px solid black;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    display: flex;
-    position: relative;
-    left: 90%;
-    top: 0%;
 }

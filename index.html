@@ -65,7 +65,7 @@
                     </form>
                 </div>
                 <div class="store">
-                    <a id="str" href="" class="text-black"><span></span>HỆ THỐNG CỬA HÀNG</a>
+                    <a id="str" href="">HỆ THỐNG CỬA HÀNG</a>
                 </div>
                 <div class="cart-account">
                     <div class="acount-wrapper">
@@ -78,14 +78,17 @@
                             <li class="item-information"><a href="">Đăng xuất</a></li>
                         </ul>
                     </div>
+                    <a href="" id="acount">TÀI KHOẢN</a>
                     <a href="">
                         <i class="fa-solid fa-cart-shopping fa-xl" style="color:black;"></i>
                     </a>
+                    <div class="bottom-header--icon" onclick="toggleDropdown()"><i class="fa-solid fa-bars"></i></div>
                 </div>
         </header>
-        <div class="bottom-header" >
-            <ul class="container">
-                <li class="categories" >
+        <div class="bottom-header" id="bottomHeader" >
+            
+            <ul class="cate__container">
+                <li class="categories">
                     <a href="">DANH MỤC SẢN PHẨM</a>
                     <ul>
                         <a href=""><li>> đă</li></a>
@@ -103,27 +106,29 @@
                 <li><a href="">TIN TỨC</a></li>
                 <li><a href="">LIÊN HỆ</a></li>
             </ul>
+
         </div>
     </div>
     <!-- banner -->
     <div class="swiper mySwiper banner">
         <div class="swiper-wrapper banner-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/banner/Property 1=Default.png" alt="">
+            </div>
             <div class="swiper-slide banner">
                 <img src="./img/banner/baner2.png" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="./img/banner/baner2.png" alt="">
+                <img src="./img/banner/baner3.png" alt="">
             </div>
-            <div class="swiper-slide">
+            
+            <!-- <div class="swiper-slide">
                 <img src="./img/banner/baner2.png" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/banner/baner2.png" alt="">
-            </div>
+            </div> -->
         </div>
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div> -->
     </div>
     <div class="succes_log_out-wrapper">
         <div class="succes_log_out">
@@ -713,7 +718,7 @@
                             <i class="fa-solid fa-star fa-lg" style="color: #ffc800;"></i>
                             <i class="fa-solid fa-star fa-lg" style="color: #ffc800;"></i>
                         </div>
-                        <p class="cmt__desc">Bình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang web</p>
+                        <p class="cmt__desc">Bình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang webBình luận đánh giá của khách hàng về trang web</p>
                     </div>
                 </div>
             </div>
@@ -750,7 +755,12 @@
             <h2>CHÍNH SÁCH</h2>
         </div>
     </footer>
-
+    <script>
+        function toggleDropdown() {
+        var dropdown = document.getElementById('bottomHeader');
+        dropdown.classList.toggle('show');
+    }
+    </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
 // ============header=============
@@ -867,6 +877,7 @@ previousButton2.addEventListener('click', function () {
 });
 
 </script>
+
 </body>
 <!-- <script src="../js/main.js"></script> -->
 

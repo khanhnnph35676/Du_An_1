@@ -53,10 +53,11 @@
                     <a href="index.php?act=giohang">
                         <i class="fa-solid fa-cart-shopping fa-xl" style="color:black;"></i>
                     </a>
+                    <div class="bottom-header--icon" onclick="toggleDropdown()"><i class="fa-solid fa-bars"></i></div>
                 </div>
         </header>
-        <div class="bottom-header" >
-            <ul class="container">
+        <div class="bottom-header" id="bottomHeader" >
+            <ul class="cate__container">
                 <li class="categories" >
                     <a href="">DANH MỤC SẢN PHẨM</a>
                     <ul>
