@@ -58,3 +58,8 @@ showPrd();
 function movePrd(n){
     showPrd(index +=n);
 }
+
+function toggleDropdown() {
+    var dropdown = document.getElementById('bottomHeader');
+    dropdown.classList.toggle('show');
+}
