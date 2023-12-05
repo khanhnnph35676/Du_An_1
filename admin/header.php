@@ -1,6 +1,7 @@
 <?php
   $list_directories_main =list_directories_main();
-
+  $admin = upload_one_admin($_SESSION['name-user-admin']);
+  $role = one_role($admin['id_vai_tro']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,8 +18,8 @@
 </head>
 <body>
     <!-- header -->
-    <header class="bg-primary">
-        <h1 class="bg-primary">Admin</h1>
+    <header class="bg-header">
+        <h1 class="bg-header">Admin</h1>
       <form class="search" action="">
         <input type="text" placeholder="Tìm kiếm . . . ">
         <button class="search__btn"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #005eff;"></i></button>
@@ -30,11 +31,11 @@
           </div>
           <div class="controll-acount-wrapper">
             <ul class="controll-acount">
-              <li><a href="" class="acount">Tên tài khoản</a>
+              <li><a href="" class="acount"><?=$admin['ten_taikhoan']?></a>
                   <ul>
                     <li><a href="">Hồ sơ</a></li>
                     <li><a href="">Cài đặt</a></li>
-                    <li><a href="">Đăng xuất</a></li>
+                    <li><a href="admin.php?adact=dangxuat">Đăng xuất</a></li>
                   </ul>
               </li>
             </ul>
@@ -44,28 +45,42 @@
 
     <!-- main -->
     <main> 
-       <div class="box-left ">
-           <div class="content-box-left">
-                <ul>
-                    <li><a href="admin.php">Trang chủ</a></li>
-                    <hr>
-                    <li><a href="admin.php?adact=sanpham">Sản phẩm</a></li>
-                    <hr>
-                    <li><span></span>
-                        <button id="diretory">Danh mục <i class="fa-solid fa-chevron-down fa-xs" style="color: #000000;"></i></button>
-                        <ul class="main_dm">
-                          <?php foreach($list_directories_main as $diretory):
-                            extract($diretory);?>
-                            <li><a href="admin.php?adact=danhmuc"><?= $ten_dmc ?></a></li>
-                            <?php endforeach;?>
-                        </ul>
-                    </li>
-                    <hr>
-                    <li><a href="admin.php?adact=khachhang">Khách hàng</a></li>
-                    <hr>
-                    <li><a href="admin.php?adact=thongke">Thống kê</a></li>
-                    <hr>
-                    <li><a href="admin.php?adact=thanhvien">Thành viên</a></li>
-                </ul>
-           </div>
+       <div class="box-left">
+          <div class="content-box-left">
+            <div class="headline__boxleft">
+                  <div class="img-wrapper__boxleft">
+                      <img src="../img/anhsp/anh1.jpg" alt="" class="img__acount-boxleft">
+                  </div>
+                  <div class="dot__boxleft"></div>
+                  <div class="name__acount-boxleft"><?=$admin['ten_taikhoan']?></div>
+                  <div class="role__acount-boxleft">Chức vụ: <?=$role['vai_tro']?></div>
+            </div>
+            <ul>
+                <li><a href="admin.php">Trang chủ</a></li>
+                <hr>
+                <li><a href="admin.php?adact=sanpham">Sản phẩm</a></li>
+                <hr>
+                <li><span></span>
+                    <button id="diretory">Danh mục <i class="fa-solid fa-chevron-down fa-xs" style="color:black"></i></button>
+                    <ul class="main_dm">
+                      <?php foreach($list_directories_main as $diretory):
+                        extract($diretory);?>
+                        <li><a href="admin.php?adact=danhmuc"><?= $ten_dmc ?></a></li>
+                        <?php endforeach;?>
+                    </ul>
+                </li>
+                <hr>
+                <li><a href="admin.php?adact=khachhang">Khách hàng</a></li>
+                <hr>
+                <li><a href="admin.php?adact=thongke">Thống kê</a></li>
+                <hr>
+                <li><a href="admin.php?adact=thanhvien">Thành viên</a></li>
+                <hr>
+                <li><a href="">Bảng</a></li>
+                <hr>
+                <li><a href="">Biểu đồ</a></li>
+                <hr>
+                <li><a href="admin.php?adact=dangxuat">Đăng xuất</a></li>
+            </ul>
+          </div>
        </div>

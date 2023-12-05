@@ -92,7 +92,7 @@
                 <div class="product-name"><?php echo $ten_sp?></div>
                     <div class="product-price"><?php echo number_format($giagiam,)?>đ</div>
                 </div>
-                <div class="quantyti-prd"><?php echo $so_luong_them?></div>
+                <div class="quantyti-prd"><?php echo $tongsoluong?></div>
             </div>
             <?php endforeach;?>
             <div class="order-summary">
