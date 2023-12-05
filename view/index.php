@@ -6,6 +6,13 @@
     include "../model/khachhang.php";
     include "../model/momo.php";
     include "header.php";
+    if(isset($_GET['act']) && $_GET['act'] == 'dangxuat'){
+        unset($_SESSION['userName']);
+        $succes_log_out = 'Đăng xuất thành công';
+    }
+    if(isset($succes_log_out)){
+        include 'taikhoan/succes_log_out.php';
+    }
     if(isset($_GET['act'])){
         $act = $_GET['act'] ;
     }
@@ -33,9 +40,6 @@
                 // mà trang sẽ đc update theo thông tin tài khoản của khách
                 if(empty($_SESSION['userName'])){
                     include "taikhoan/dangnhap.php";
-                }else{
-                    $user_then_check = check_user($_SESSION['userName']);
-                    include "taikhoan/thongtintaikhoan.php";
                 }
                 break;
             case 'quenmatkhau':
@@ -70,6 +74,38 @@
                         include "sanpham/chitietsp.php";
                     }
                 break;
+            // chức năng bên tài khoản khách hàng
+            case 'doimatkhau':
+                if(isset($_SESSION['userName'])){
+                    include 'thongtintk/doimatkhau.php';
+                }else{
+                    include "taikhoan/dangnhap.php";
+                }
+                break;
+            case 'thongtintaikhoan':
+                if(isset($_SESSION['userName'])){
+                    $user = check_user($_SESSION['userName']);
+                    include 'thongtintk/thongtin.php';
+                }else{
+                    include "taikhoan/dangnhap.php";
+                }
+                break;
+            case 'donhang':
+                if(isset($_SESSION['userName'])){
+                    $check_user = check_user($_SESSION['userName']);
+                    $orders = upload_order($check_user['id']);
+                    include 'thongtintk/donhang.php';
+                }else{
+                    include "taikhoan/dangnhap.php";
+                }
+                break;
+            case 'sodiachi':
+                if(isset($_SESSION['userName'])){
+                    include 'thongtintk/sodiachi.php';
+                }else{
+                    include "taikhoan/dangnhap.php";
+                }
+                break;
             case 'buy-now':    
                 $user_then_check = check_user($_SESSION['userName']);
                 if(isset($_SESSION['userName'])){
@@ -88,9 +124,12 @@
                 $sum_abate = sum_abate();
                 include 'momo/thanhtoan_atm.php';
                 break;
-            case 'giohang':    
-                include "tranggiohang.php";
-                break;
+            // case 'giohang':    
+            //     include "tranggiohang.php";
+            //     break;
+            // case 'dangxuat':
+            //     include "taikhoan/dangnhap.php";
+            //     break; 
             default:
                 include "home.php";
                 break;
@@ -98,6 +137,7 @@
     }else{
         include "home.php";
     }
+    
     include "footer.php";
 ?>
    

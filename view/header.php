@@ -36,7 +36,20 @@
                     <a id="str" href="index.php?act=hethong-cuahang" class="text-black">HỆ THỐNG CỬA HÀNG</a>
                 </div>
                 <div class="cart-account">
-                    <a href="index.php?act=taikhoan" id="acount"><span></span>TÀI KHOẢN</a>
+                    <?php if(empty($_SESSION['userName'])){?>
+                        <a href="?act=taikhoan" id="acount">TÀI KHOẢN</a>
+                    <?php }elseif(isset($_SESSION['userName']) && $_SESSION['userName'] != ''){ ?>
+                        <button id="acount">TÀI KHOẢN</button>
+                        <ul class="information-user">
+                            <li class="item-information"><a href="?act=thongtintaikhoan">Thông tin tài khoản</a></li>
+                            <li class="item-information"><a href="?act=sodiachi">Sổ địa chỉ</a></li>
+                            <li class="item-information"><a href="?act=donhang">Đơn hàng của bạn</a></li>
+                            <li class="item-information"><a href="?act=doimatkhau">Đổi mật khẩu</a></li>
+                            <li class="item-information"><a href="?act=dangxuat">Đăng xuất</a></li>
+                        </ul>
+                    <?php };?>
+                    </a>
+                   
                     <a href="index.php?act=giohang">
                         <i class="fa-solid fa-cart-shopping fa-xl" style="color:black;"></i>
                     </a>
@@ -64,7 +77,7 @@
     </div>
      <!-- banner -->
      <?php
-        if(empty($_GET['act'])){
+        if(empty($_GET['act']) || $_GET['act'] == 'dangxuat'){
             include 'banner.php';
         }
         //include 'banner.php';

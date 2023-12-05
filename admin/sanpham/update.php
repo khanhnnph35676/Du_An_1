@@ -29,7 +29,7 @@ if(isset($_POST['update'])){
           $error['error-quantyti-prd'] = 'Nhập số lượng sản phẩm cho phép!';
       }
       if(!preg_match("/^[0-9]*$/",$so_luong)){
-          return "Chỉ được điền số!";
+        $error['error-quantyti-prd'] = 'Nhập số lượng sản phẩm cho phép!';
       }
   }
   if(empty($noidung_sp)){

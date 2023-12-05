@@ -24,7 +24,8 @@
                 </div>
                 <!-- Thống kê sản phẩm được mua -->
                 <div class="statistic-prd radius">
-                    <div id="donutchart" style="width: 350px; height: 300px;"></div>
+                  <h5>Sản phẩm nổi bật</h5>
+                  <canvas id="myChart3" width="200px" height="200px"></canvas>
                 </div>
                 <!-- số người dùng, tổng loại hàng, daonh thu 1 ngày -->
                 <div class="sattistic radius">
@@ -64,7 +65,7 @@
                             <th scope="col">Lượt thích</th>
                             <th scope="col">Số lượng</th>
                             <th scope="col">Trạng thái</th>
-                          </tr>
+                          </tr> 
                         </thead>
                         <tbody>
                         <?php foreach($list_prds as $prd ):

@@ -6,11 +6,8 @@
     <title>Admin</title>
     <link rel="stylesheet" href="../css/admin.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="../js/bieudo.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-   
 </head>
 <body>
     <!-- header -->
@@ -74,7 +71,8 @@
                 </div>
                 <!-- Thống kê sản phẩm được mua -->
                 <div class="statistic-prd radius">
-                    <div id="donutchart" style="width: 350px; height: 300px;"></div>
+                  <h5>Sản phẩm nổi bật</h5>
+                  <canvas id="myChart3" width="200px" height="200px"></canvas>
                 </div>
                 <!-- số người dùng, tổng loại hàng, daonh thu 1 ngày -->
                 <div class="sattistic radius">
@@ -303,6 +301,27 @@
         type: 'line',  // Loại biểu đồ (có thể là bar, line, pie, radar, v.v.)
         data: data2,
         options: options
+      });
+      const data3 = {
+      labels: [
+        '1',
+        '2',
+        '3'
+      ],
+      datasets: [{
+        data: [300, 50, 100],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)'
+        ],
+          hoverOffset: 4
+        }]
+      };
+      var ctx = document.getElementById('myChart3').getContext('2d');
+      var myChart3 = new Chart(ctx, {
+        type: 'doughnut',
+        data: data3,
       });
     </script>
     

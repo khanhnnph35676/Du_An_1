@@ -5,6 +5,21 @@
 }
 
 /* header */
+#acount{
+    background:rgba(16, 111, 133, 1) ;
+}
+.information-user{
+    margin: 0;
+    padding: 5px;
+    background: rgb(231, 229, 229);
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    display: none;
+}
+.information-user li{
+    display: block !important;  
+}
 .box-header{
     background: rgba(16, 111, 133, 1);
     position: fixed;
@@ -1048,23 +1063,25 @@ footer{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ mờ */
-    z-index: 1; /* Đảm bảo nền mờ ở trên cùng */
+    z-index: 1111; /* Đảm bảo nền mờ ở trên cùng */
   }
 
   /* Hiển thị trang con như một bảng to */
   .subpage {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 30px;
     background-color: #fff;
-    z-index: 2; /* Đảm bảo trang con ở trên cùng */
-    width: 750px;
+    z-index: 1111; /* Đảm bảo trang con ở trên cùng */
+    width: 780px;
     height: auto;
     margin-top: 50px;
-  }.subpage__header{
+    border-radius: 10px;
+  }
+  .subpage__header{
     margin-top: 10px;
     display: flex;
    
@@ -1197,9 +1214,7 @@ footer{
   .accpass__btn--1 {
     margin-right: 367px; 
   }
-  button:hover {
-    background-color: #094e63;
-  }
+
   .accpass__tologin{
     text-align: center;
     margin-top: 20px;
@@ -1260,7 +1275,7 @@ footer{
   }
 
   .product--1,.product--2 {
-    flex: 0 0 303px; /* Độ rộng của mỗi sản phẩm */
+    flex: 0 0 293px; /* Độ rộng của mỗi sản phẩm */
     border-radius: 5px;
     border: 1px solid rgb(238, 234, 234);
     position: relative;
@@ -1269,7 +1284,7 @@ footer{
   }
   .product--2 a img,.product--1 a img{
     width: 100%;
-    height: 300px;
+    height: 230px;
   }
   .name__prd{
     text-decoration: none;
@@ -1278,7 +1293,7 @@ footer{
   .img__prd-wrapper{
     border-radius: 10px;
     width: 99%;
-    height: 280px;
+    height: 230px;
     overflow: hidden;
     transition: 0.5s ease;
     margin-bottom: 30px;
@@ -1335,4 +1350,43 @@ footer{
 
 .all-stars{
     padding-top: 10px;
+}
+
+/* ===========các thông báo============ */
+/* 1 thông báo đăng xuất thành công */
+.succes_log_out-wrapper{
+    background: rgba(0, 0, 0, 0.108);
+     position: fixed;
+     top: 10%;
+     z-index: 1111;
+}
+.succes_log_out{
+   
+    width: 180px;
+    height: 70px;
+    background: rgb(236, 234, 234) !important;
+    border-radius: 10px;
+    position: relative;
+    top: 45%;
+    left: 45%;
+    padding: 5px;
+    z-index: 1111;
+    text-align: center;
+}
+.succes_log_out a {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: -50%;
+    margin-left: 3px;
+}
+.link-index{
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    left: 90%;
+    top: 0%;
 }

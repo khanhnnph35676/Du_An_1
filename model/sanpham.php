@@ -69,7 +69,8 @@ function upload_prds_hot(){
     }
 //selcet nhiều sản phẩm trong giỏ hàng
     function upload_prds_on_cart($userName){
-        $sql = "SELECT t.*,gio_hang.*,san_pham.*,gia_sp * (100 - giam_gia)/100*so_luong_them as giagiam,SUM(so_luong_them) as tongsoluong  FROM gio_hang 
+        $sql = "SELECT t.*,gio_hang.*,san_pham.*,gia_sp * (100 - giam_gia)/100*so_luong_them as giagiam,SUM(so_luong_them) as tongsoluong,
+        (gia_sp * (100 - giam_gia)/100) * (SUM(so_luong_them))as tongtien  FROM gio_hang 
         JOIN san_pham ON gio_hang.id_sp = san_pham.id
         JOIN tai_khoan_kh t ON t.id = gio_hang.id_kh
         WHERE t.ten_kh = '$userName'

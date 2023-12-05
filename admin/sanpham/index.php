@@ -60,12 +60,13 @@
                   class="update_prd btn-action">Sửa</a>
                   <a href="admin.php?adact=sanpham&id_sp=<?php echo $id ?>&fct=delete_sp"
                      class="delete_prd btn-action ranger"
-                     onclick="confirm('Bạn muốn xoá không?');">Xoá</a>
+                     onclick="return confirm('Bạn muốn xoá không?');">Xoá</a>
               </td>
             </tr>
             <?php endforeach;?>
           </tbody>
         </table>
+        <h5><a href="admin.php?adact=tatcasanpham" class="add_prd btn-action">Tất cả sản phẩm</a></h5>
       </div>
     </div>
 </section>

@@ -40,6 +40,19 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+// ============header=============
+function click(button,content){
+    button.addEventListener('click', function() {
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+        }else{
+            content.style.display = 'none';
+        }
+    });
+}
+let acount = document.querySelector('#acount');
+let informationUser = document.querySelector('.information-user')
+click(acount,informationUser);
 // =========slider================
 function createSwiper(containerClass, options) {
     return new Swiper(containerClass, options);

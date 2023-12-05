@@ -9,8 +9,7 @@
             <thead>
                 <tr>
                     <th></th>
-                    <th scope="col">Ảnh sản phẩm</th>
-                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Sản phẩm</th>
                     <th scope="col">Đơn giá</th>
                     <th scope="col">Số lượng</th>
                     <th scope="col">Thành tiền</th>
@@ -23,13 +22,19 @@
                         extract($prd_on_cart);?>
                 <tr>
                     <td><input type="checkbox" name=""></td>
-                    <td><img src="../img/prd/<?php echo $hinh_anh ?>" alt="Sản phẩm 1" style="width: 50px;"></td>
-                    <td><?php echo $ten_sp?></td>
-                    <td style="color: #106F85;"><?php echo number_format($gia_sp)?>đ</td>
-                    <td><input type="number" value="<?php echo $so_luong_them ?>" min="1"></td>
-                    <td style="color: #106F85;"><?php echo number_format($giagiam)?>đ</td>
+                    <td>
+                        <a style="text-decoration: none; color:black" href="index.php?act=chitietsp&id_sp=<?= $id_sp?>">
+                            <img src="../img/prd/<?php echo $hinh_anh ?>" alt="Sản phẩm 1" style="width: 50px;">
+                            <?php echo $ten_sp?>
+                        </a>
+                    </td>
+                    <td style="color: #106F85;"> <del><?php echo number_format($gia_sp)?>đ </del> <?=number_format($giagiam)?>đ  </td>
+                    <td><input type="number" value="<?php echo $tongsoluong ?>" min="1"></td>
+                    <td style="color: #106F85;"><?php echo number_format($tongtien)?>đ</td>
                     <td><button class="btn btn-danger">
-                    <a href="sanpham/xoaspgiohang.php?id_gio_hang=<?php echo $id_sp?>"onclick="return confirm('Bạn muốn xoá sản phẩm này khỏi giỏ hàng của mình?')">Xoá</a>
+                    <a href="sanpham/xoaspgiohang.php?id_gio_hang=<?php echo $id_sp?>"
+                        onclick="return confirm('Bạn muốn xoá sản phẩm này khỏi giỏ hàng của mình?')"
+                        style="text-decoration: none; color:black">Xoá</a>
                     </button></td>
                 </tr>
                 <?php endforeach;?>
@@ -39,7 +44,7 @@
         </table>
         <!-- Button tiếp tục mua hàng -->
         <div class="cart__cost">
-            <button class="btn-form"><a href="index.php">Tiếp tục mua hàng</a></button>
+            <button class="btn-form"><a href="index.php" style="text-decoration: none; color:black">Tiếp tục mua hàng</a></button>
             <div class="cart__total">
                     <div class="cart__total-money">
                         <h6>Tổng tiền phải thanh toán: </h6>
@@ -54,7 +59,7 @@
         </div>
         <!-- Khung tổng tiền và Button thanh toán -->
         <div class="cart__pay">
-            <button class="btn-form">
+            <button class="btn-form" >
             <a href=" <?php foreach($prds_on_cart as $prd_on_cart){
                 extract($prd_on_cart);
                     if(isset($id_sp)){
@@ -66,7 +71,7 @@
                  if($thanh_toan == ''){
                     echo 'index.php';
                  }
-                 ?>">Thanh toán
+                 ?>"  style="text-decoration: none; color:black">Thanh toán
             </a></button>
         </div>
     </div>
